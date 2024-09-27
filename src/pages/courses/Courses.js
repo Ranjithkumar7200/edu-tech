@@ -48,7 +48,10 @@ const Courses = () => {
                     </span>
                     <span className="course-price">{course.price}</span>
                   </div>
-                  <Button variant="primary" className="mt-3">
+                  <Button
+                    style={{ backgroundColor: "#578ac7", border: "none" }}
+                    className="mt-3"
+                  >
                     Enroll Now
                   </Button>
                 </Card.Body>
