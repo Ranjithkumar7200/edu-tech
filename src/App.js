@@ -1,12 +1,12 @@
 import "./App.css";
-import Courses from "./pages/courses/Courses";
+import Home from "./pages/home/Home";
 import EduTechNavbar from "./pages/Navbar/EduTechNavbar";
 
 function App() {
   return (
-    <div style={{ backgroundColor: "black" }}>
+    <div>
       <EduTechNavbar />
-      <Courses />
+      <Home />
     </div>
   );
 }

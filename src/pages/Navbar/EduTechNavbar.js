@@ -14,11 +14,11 @@ const EduTechNavbar = () => {
     <Navbar
       collapseOnSelect
       expand="lg"
-      bg="light"
       variant="light"
       sticky="top"
-      className="shadow-sm"
+      className=""
       onSelect={handleSelect}
+      style={{ backgroundColor: "#FDF8EE" }}
     >
       <Container>
         <Navbar.Brand href="#home" className="d-flex align-items-center">
