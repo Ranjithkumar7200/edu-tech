@@ -43,7 +43,10 @@ const Home = () => {
             </Col>
           </Row>
         </section>
-        <div className="position-absolute" style={{ top: -10 }}>
+        <div
+          className="position-absolute d-lg-block d-none"
+          style={{ top: -10 }}
+        >
           <img src={group1} alt="group" className="img-fluid rounded" />
         </div>
       </Container>

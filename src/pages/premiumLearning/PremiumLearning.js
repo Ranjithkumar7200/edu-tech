@@ -32,11 +32,11 @@ const PremiumLearning = () => {
                 repeatType: "loop",
               }}
             />
-            <div className="position-absolute top-0 start-50 translate-middle-x study-group-container">
+            <div className="position-absolute d-lg-block d-none top-0 start-50 translate-middle-x study-group-container">
               <img
                 src={group2}
                 alt="group"
-                className="img-fluid rounded study-group"
+                className="img-fluid rounded"
               />
             </div>
           </Col>
