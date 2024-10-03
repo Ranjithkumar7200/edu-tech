@@ -14,10 +14,13 @@ const PremiumLearning = () => {
       className="d-flex align-items-center justify-content-center my-5"
       style={{ backgroundColor: primaryColor }}
     >
-      {" "}
       <Container className="p-4">
         <Row className="align-items-center justify-content-center">
-          <Col className="mb-4 mb-md-0 text-center position-relative">
+          <Col
+            xs={12}
+            md={6}
+            className="mb-4 mb-md-0 text-center position-relative"
+          >
             <motion.img
               src={studyImg}
               alt="Woman working on laptop"
@@ -29,7 +32,7 @@ const PremiumLearning = () => {
                 repeatType: "loop",
               }}
             />
-            <div className="position-absolute" style={{ top: 0 }}>
+            <div className="position-absolute top-0 start-50 translate-middle-x study-group-container">
               <img
                 src={group2}
                 alt="group"
@@ -37,14 +40,18 @@ const PremiumLearning = () => {
               />
             </div>
           </Col>
-          <Col>
+          <Col xs={12} md={6}>
             <h2 className="mb-4 text-center text-md-start">
               <span className="fw-bold">Premium Learning</span>{" "}
               <span className="text-warning">Experience</span>
             </h2>
             <div className="mb-3 d-flex align-items-center">
               <div className="bg-light rounded p-2 me-3">
-                <Image src={hearts} alt="..." className="rounded" />
+                <Image
+                  src={hearts}
+                  alt="Easily Accessible"
+                  className="rounded img-icon"
+                />
               </div>
               <div>
                 <h5 className="mb-0">Easily Accessible</h5>
@@ -55,7 +62,11 @@ const PremiumLearning = () => {
             </div>
             <div className="d-flex align-items-center">
               <div className="bg-light rounded p-2 me-3">
-                <Image src={puzzle} alt="..." className="rounded" />
+                <Image
+                  src={puzzle}
+                  alt="Fun Learning Experience"
+                  className="rounded img-icon"
+                />
               </div>
               <div>
                 <h5 className="mb-0">Fun Learning Experience</h5>

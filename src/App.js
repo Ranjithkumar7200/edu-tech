@@ -4,6 +4,7 @@ import Features from "./pages/features/Features";
 import Home from "./pages/home/Home";
 import EduTechNavbar from "./pages/Navbar/EduTechNavbar";
 import PremiumLearning from "./pages/premiumLearning/PremiumLearning";
+import Reviews from "./pages/Reviews/Reviews";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Features />
       <Courses />
       <PremiumLearning />
+      <Reviews />
     </div>
   );
 }

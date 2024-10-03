@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import UICourseCard from "../../components/UICourseCard";
+import UICourseCard from "../../components/UICourseCard/UICourseCard";
 import { courses } from "./courseItems";
 
 const Courses = () => {
