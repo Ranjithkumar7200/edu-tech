@@ -5,7 +5,7 @@ import { Col, Container, Row } from "react-bootstrap";
 const Features = () => {
   return (
     <div>
-      <Container className="bg-warning px-5 py-4 rounded">
+      <Container className="bg-warning px-5 my-5 py-4 rounded">
         <Row className="g-4 justify-content-center align-items-center my-1">
           {feature.map((items, index) => (
             <Col

@@ -1,0 +1,9 @@
+@media (min-width: 992px) {
+    .study-img {
+      width: 40%;
+    }
+    .study-group {
+        width: 60%;
+      }
+  }
+  

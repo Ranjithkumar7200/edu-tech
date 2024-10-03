@@ -5,9 +5,9 @@ import { courses } from "./courseItems";
 
 const Courses = () => {
   return (
-    <div className="mt-5">
+    <div className="my-5">
       <header className="text-center my-5">
-        <h2>Our Tracks</h2>
+        <h2>Our Courses</h2>
         <p className="text-secondary text-center">
           Explore our industry-leading courses designed to empower your learning
           journey with practical skills.

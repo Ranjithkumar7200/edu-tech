@@ -7,10 +7,10 @@ import { motion } from "framer-motion";
 const Home = () => {
   return (
     <div
-      className="position-relative pt-lg-3 pt-1 pb-5"
+      className="position-relative pt-lg-3 pt-1 pb-lg-1 pb-0"
       style={{ backgroundColor: "#FDF8EE" }}
     >
-      <Container className="position-relative py-5">
+      <Container className="position-relative mb-5 py-lg-5 py-3">
         <section className="hero py-5">
           <Row className="align-items-center">
             <Col
