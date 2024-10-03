@@ -7,18 +7,18 @@ export const feature = [
     image: onlineTest,
     title: "Learn The Latest Skills",
     subTitle:
-      "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a BC, making it over 2000 years old.",
+      "Stay ahead of the curve with our updated courses designed to equip you with the skills needed in today's competitive job market.",
   },
   {
     image: exam,
     title: "Get Ready For a Career",
     subTitle:
-      "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a BC, making it over 2000 years old.",
+      "Prepare for a successful career with hands-on projects and real-world applications that enhance your learning experience.",
   },
   {
     image: Certificate,
     title: "Earn a Certificate",
     subTitle:
-      "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a BC, making it over 2000 years old.",
+      "Receive a recognized certificate upon course completion, showcasing your expertise and enhancing your resume for potential employers.",
   },
 ];

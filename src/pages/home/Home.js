@@ -3,18 +3,20 @@ import { Button, Col, Container, Row } from "react-bootstrap";
 import LandingImg from "../../assets/images/OBJECTS.png";
 import group1 from "../../assets/images/group1.png";
 import { motion } from "framer-motion";
-import Features from "../features/Features";
 
 const Home = () => {
   return (
     <div
-      className="position-relative pt-lg-4 pt-1 pb-5 mb-5"
+      className="position-relative pt-lg-3 pt-1 pb-5"
       style={{ backgroundColor: "#FDF8EE" }}
     >
       <Container className="position-relative py-5">
         <section className="hero py-5">
           <Row className="align-items-center">
-            <Col lg={6} className="d-flex flex-column align-items-lg-start align-items-center ">
+            <Col
+              lg={6}
+              className="d-flex flex-column align-items-lg-start align-items-center "
+            >
               <h1 className="display-4 text-lg-start text-center fw-bold mb-3">
                 The Best Online Courses For Your Future
               </h1>
@@ -45,15 +47,6 @@ const Home = () => {
           <img src={group1} alt="group" className="img-fluid rounded" />
         </div>
       </Container>
-      <div
-        className="position-absolute d-lg-block d-none"
-        style={{ bottom: -120, left: 0, right: 0 }}
-      >
-        <Features />
-      </div>
-      <div className=" d-lg-none d-block">
-        <Features />
-      </div>
     </div>
   );
 };
