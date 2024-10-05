@@ -6,9 +6,9 @@ import emailjs from "emailjs-com";
 import { toast } from "react-toastify";
 
 const ContactUs = () => {
-  const SERVICE_ID = "YOUR_EMAILJS_SERVICE_ID";
-  const TEMPLATE_ID = "YOUR_EMAILJS_TEMPLATE_ID";
-  const USER_ID = "YOUR_EMAILJS_USER_ID";
+  const SERVICE_ID = "service_ngkgoix";
+  const TEMPLATE_ID = "template_8d2mmwa";
+  const USER_ID = "AvDbY7qvB88QttaV1";
 
   const validationSchema = Yup.object({
     name: Yup.string().required("Name is required"),
@@ -29,6 +29,8 @@ const ContactUs = () => {
         resetForm();
       })
       .catch((err) => {
+        console.log(err);
+
         toast.error("Failed to send message. Please try again later.", {
           autoClose: 1000,
         });
@@ -120,7 +122,7 @@ const ContactUs = () => {
 
                 <Button
                   type="submit"
-                  variant="primary"
+                  variant="warning"
                   className="w-100"
                   disabled={isSubmitting}
                 >

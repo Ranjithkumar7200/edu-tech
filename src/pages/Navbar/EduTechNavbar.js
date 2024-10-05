@@ -1,11 +1,15 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Navbar, Nav, Container, Button } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import logo from "../../assets/images/logo.jpeg";
 import "./EduTechNavbar.css";
 
 const EduTechNavbar = () => {
-  const [activeLink, setActiveLink] = useState("/");
+  const location = useLocation();
+  const [activeLink, setActiveLink] = useState(location.pathname);
+  useEffect(() => {
+    setActiveLink(location.pathname);
+  }, [location]);
 
   const handleSelect = (path) => {
     setActiveLink(path);
