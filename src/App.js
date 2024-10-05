@@ -1,5 +1,6 @@
 import "./App.css";
 import AboutUs from "./pages/aboutUs/AboutUs";
+import Community from "./pages/community/Community";
 import ContactUs from "./pages/contactUs/ContactUs";
 import Courses from "./pages/courses/Courses";
 import LandingPage from "./pages/LandingPage/LandingPage";
@@ -15,6 +16,7 @@ function App() {
         <Route path="/courses" element={<Courses />} />
         <Route path="/about" element={<AboutUs />} />
         <Route path="/contact" element={<ContactUs />} />
+        <Route path="/community" element={<Community />} />
       </Routes>
     </Router>
   );

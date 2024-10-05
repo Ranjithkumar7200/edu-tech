@@ -68,16 +68,16 @@ const EduTechNavbar = () => {
             </Nav.Link>
             <Nav.Link
               as={Link}
-              to="/programs"
+              to="/community"
               className="px-3"
-              onClick={() => handleSelect("/programs")}
+              onClick={() => handleSelect("/community")}
             >
               <span
                 className={`nav-link-custom ${
-                  activeLink === "/programs" ? "active" : ""
+                  activeLink === "/community" ? "active" : ""
                 }`}
               >
-                Programs
+                Community
               </span>
             </Nav.Link>
             <Nav.Link
