@@ -1,11 +1,12 @@
 import React from "react";
 import { Container, Accordion, Card,} from "react-bootstrap";
 import { faqs } from "./faqItems";
+import { primaryColor } from "../../constants/colors";
 
 const FaqSection = () => {
   return (
-    <>
-      <Container className="my-5">
+    <div style={{backgroundColor:primaryColor}}>
+      <Container className="py-3 my-5">
         <h2 className="text-center mb-4">Frequently Asked Questions</h2>
         <Accordion defaultActiveKey="0">
         {faqs.map((faq, index) => (
@@ -18,7 +19,7 @@ const FaqSection = () => {
         ))}
       </Accordion>
       </Container>
-    </>
+    </div>
   );
 };
 
