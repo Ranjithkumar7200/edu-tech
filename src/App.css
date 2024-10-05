@@ -4,5 +4,20 @@
   margin: 0;
   font-family: 'Jost', sans-serif;
 }
+::-webkit-scrollbar {
+  background-color: transparent; 
+  width: 8px; 
+  height: 8px; 
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #ffc107, #ff6a00);
+  border-radius: 100px; 
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 100px;
+}
 
 
