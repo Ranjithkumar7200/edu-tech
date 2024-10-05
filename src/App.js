@@ -1,21 +1,22 @@
 import "./App.css";
+import AboutUs from "./pages/aboutUs/AboutUs";
+import ContactUs from "./pages/contactUs/ContactUs";
 import Courses from "./pages/courses/Courses";
-import Features from "./pages/features/Features";
-import Home from "./pages/home/Home";
+import LandingPage from "./pages/LandingPage/LandingPage";
 import EduTechNavbar from "./pages/Navbar/EduTechNavbar";
-import PremiumLearning from "./pages/premiumLearning/PremiumLearning";
-import Reviews from "./pages/Reviews/Reviews";
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 
 function App() {
   return (
-    <div>
+    <Router>
       <EduTechNavbar />
-      <Home />
-      <Features />
-      <Courses />
-      <PremiumLearning />
-      <Reviews />
-    </div>
+      <Routes>
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/courses" element={<Courses />} />
+        <Route path="/about" element={<AboutUs />} />
+        <Route path="/contact" element={<ContactUs />} />
+      </Routes>
+    </Router>
   );
 }
 

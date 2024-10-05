@@ -1,13 +1,14 @@
 import React, { useState } from "react";
 import { Navbar, Nav, Container, Button } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import logo from "../../assets/images/logo.jpeg";
 import "./EduTechNavbar.css";
 
 const EduTechNavbar = () => {
-  const [activeLink, setActiveLink] = useState("#home");
+  const [activeLink, setActiveLink] = useState("/");
 
-  const handleSelect = (eventKey) => {
-    setActiveLink(eventKey);
+  const handleSelect = (path) => {
+    setActiveLink(path);
   };
 
   return (
@@ -17,11 +18,14 @@ const EduTechNavbar = () => {
       variant="light"
       sticky="top"
       className=""
-      onSelect={handleSelect}
       style={{ backgroundColor: "#FDF8EE" }}
     >
       <Container>
-        <Navbar.Brand href="#home" className="d-flex align-items-center">
+        <Navbar.Brand
+          as={Link}
+          to="/"
+          className="d-flex align-items-center"
+        >
           <img
             src={logo}
             alt="EduTech Logo"
@@ -34,46 +38,71 @@ const EduTechNavbar = () => {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="mx-auto" activeKey={activeLink}>
-            <Nav.Link href="#home" className="px-3">
+            <Nav.Link
+              as={Link}
+              to="/"
+              className="px-3"
+              onClick={() => handleSelect("/")}
+            >
               <span
                 className={`nav-link-custom ${
-                  activeLink === "#home" ? "active" : ""
+                  activeLink === "/" ? "active" : ""
                 }`}
               >
                 Home
               </span>
             </Nav.Link>
-            <Nav.Link href="#courses" className="px-3">
+            <Nav.Link
+              as={Link}
+              to="/courses"
+              className="px-3"
+              onClick={() => handleSelect("/courses")}
+            >
               <span
                 className={`nav-link-custom ${
-                  activeLink === "#courses" ? "active" : ""
+                  activeLink === "/courses" ? "active" : ""
                 }`}
               >
                 Courses
               </span>
             </Nav.Link>
-            <Nav.Link href="#programs" className="px-3">
+            <Nav.Link
+              as={Link}
+              to="/programs"
+              className="px-3"
+              onClick={() => handleSelect("/programs")}
+            >
               <span
                 className={`nav-link-custom ${
-                  activeLink === "#programs" ? "active" : ""
+                  activeLink === "/programs" ? "active" : ""
                 }`}
               >
                 Programs
               </span>
             </Nav.Link>
-            <Nav.Link href="#about" className="px-3">
+            <Nav.Link
+              as={Link}
+              to="/about"
+              className="px-3"
+              onClick={() => handleSelect("/about")}
+            >
               <span
                 className={`nav-link-custom ${
-                  activeLink === "#about" ? "active" : ""
+                  activeLink === "/about" ? "active" : ""
                 }`}
               >
                 About Us
               </span>
             </Nav.Link>
-            <Nav.Link href="#contact" className="px-3">
+            <Nav.Link
+              as={Link}
+              to="/contact"
+              className="px-3"
+              onClick={() => handleSelect("/contact")}
+            >
               <span
                 className={`nav-link-custom ${
-                  activeLink === "#contact" ? "active" : ""
+                  activeLink === "/contact" ? "active" : ""
                 }`}
               >
                 Contact
@@ -82,7 +111,7 @@ const EduTechNavbar = () => {
           </Nav>
 
           <Nav className="d-flex">
-            <Button variant="warning" href="#join-group">
+            <Button variant="warning" as={Link} to="/join-group">
               Join Group
             </Button>
           </Nav>
