@@ -1,14 +1,18 @@
 import React from "react";
 import { Card, Button } from "react-bootstrap";
 import { Clock, MonitorPlay, Download, Star } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 const UICourseCard = ({ course }) => {
+  const navigate = useNavigate();
   return (
     <Card className="shadow-sm h-100">
       <Card.Img
+       onClick={() => navigate("/course-details", { state: { course } })} 
         variant="top"
         src={course.image}
         alt={`${course.title} thumbnail`}
+        className="pointer"
       />
       <Card.Body className="d-flex flex-column">
         <div className="d-flex justify-content-between align-items-center mb-1">
