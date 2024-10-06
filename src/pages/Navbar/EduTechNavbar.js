@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useRef } from "react";
 import { Navbar, Nav, Container, Button } from "react-bootstrap";
 import { Link, useLocation } from "react-router-dom";
-import logo from "../../assets/images/logo.jpeg";
+import logo from "../../assets/images/logofinal.jpg";
 import "./EduTechNavbar.css";
 
 const EduTechNavbar = () => {
