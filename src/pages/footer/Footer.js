@@ -1,5 +1,4 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
 import logo from "../../assets/images/logofinal.jpg";
 import "./Footer.css";
 import { CiInstagram } from "react-icons/ci";
