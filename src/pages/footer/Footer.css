@@ -1,0 +1,44 @@
+.background{
+
+    background-color:#fdf8ee ;
+    margin:0px !important;
+}
+.m-bt{
+    margin-bottom: 0px !important;
+}
+.footer-logo{
+    width: 100px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.headFont{
+    font-family: 'Playfair Display', serif;
+    font-size: large;
+    font-weight: bold;
+   
+}
+.footer-text{
+    color: black;
+}
+
+@media (max-width: 576px) {
+    .footer-items {
+      text-align: left;
+    }
+  }
+
+  @media (min-width: 992px)  {
+    .mr-10 {
+     margin-right: 10px;
+    }
+    .mr-11 {
+        margin-right: 10px;
+    }
+    .mr-6 {
+        margin-right: 6px;
+    }
+  }
+
+

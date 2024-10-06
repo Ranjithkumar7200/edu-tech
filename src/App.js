@@ -5,12 +5,14 @@ import ContactUs from "./pages/contactUs/ContactUs";
 import Courses from "./pages/courses/Courses";
 import LandingPage from "./pages/LandingPage/LandingPage";
 import EduTechNavbar from "./pages/Navbar/EduTechNavbar";
+import Footer from "./pages/footer/Footer";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 
 function App() {
   return (
     <Router>
       <EduTechNavbar />
+
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/courses" element={<Courses />} />
@@ -18,6 +20,7 @@ function App() {
         <Route path="/contact" element={<ContactUs />} />
         <Route path="/community" element={<Community />} />
       </Routes>
+<Features />
     </Router>
   );
 }
