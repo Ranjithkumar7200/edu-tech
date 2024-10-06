@@ -20,7 +20,7 @@ function App() {
         <Route path="/contact" element={<ContactUs />} />
         <Route path="/community" element={<Community />} />
       </Routes>
-<Features />
+      <Footer />
     </Router>
   );
 }
