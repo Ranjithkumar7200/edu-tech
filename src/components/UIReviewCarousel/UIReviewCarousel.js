@@ -1,5 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Container, Row, Col, Card, Image } from "react-bootstrap";
+import AOS from "aos"; 
+
 
 const UIReviewCarousel = ({ items, intervalTime = 2000 }) => {
   const [startIndex, setStartIndex] = useState(0);
@@ -7,6 +9,9 @@ const UIReviewCarousel = ({ items, intervalTime = 2000 }) => {
   const containerRef = useRef(null);
 
   useEffect(() => {
+   
+    AOS.init({ duration: 1000 });
+
     const updateVisibleCount = () => {
       const container = containerRef.current;
       const width = container ? container.offsetWidth : 0;
@@ -62,7 +67,10 @@ const UIReviewCarousel = ({ items, intervalTime = 2000 }) => {
       <Row className="justify-content-center">
         {visibleItems.map((item, index) => (
           <Col key={index} md={12 / visibleCount} className="mb-4">
-            <Card className="h-100 shadow-sm">
+            <Card
+              className="h-100 shadow-sm"
+              data-aos="slide-up"
+            >
               <Card.Body className="d-flex flex-column">
                 <Card.Text className="flex-grow-1 text-muted">
                   "{item.quote}"
