@@ -7,21 +7,27 @@ import LandingPage from "./pages/LandingPage/LandingPage";
 import EduTechNavbar from "./pages/Navbar/EduTechNavbar";
 import Footer from "./pages/footer/Footer";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import CourseDetails from "./pages/courses/CourseDetails/CourseDetails";
+import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 
 function App() {
   return (
-    <Router>
-      <EduTechNavbar />
+    <>
+      <Router>
+        <ScrollToTop />
+        <EduTechNavbar />
 
-      <Routes>
-        <Route path="/" element={<LandingPage />} />
-        <Route path="/courses" element={<Courses />} />
-        <Route path="/about" element={<AboutUs />} />
-        <Route path="/contact" element={<ContactUs />} />
-        <Route path="/community" element={<Community />} />
-      </Routes>
-      <Footer />
-    </Router>
+        <Routes>
+          <Route path="/" element={<LandingPage />} />
+          <Route path="/courses" element={<Courses />} />
+          <Route path="/course-details" element={<CourseDetails />} />
+          <Route path="/about" element={<AboutUs />} />
+          <Route path="/contact" element={<ContactUs />} />
+          <Route path="/community" element={<Community />} />
+        </Routes>
+        <Footer />
+      </Router>
+    </>
   );
 }
 

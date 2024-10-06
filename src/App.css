@@ -4,6 +4,9 @@
   margin: 0;
   font-family: 'Jost', sans-serif;
 }
+.pointer{
+  cursor: pointer;
+}
 ::-webkit-scrollbar {
   background-color: transparent; 
   width: 8px; 
