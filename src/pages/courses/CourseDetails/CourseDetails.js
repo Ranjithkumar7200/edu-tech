@@ -2,7 +2,7 @@ import React from "react";
 import { useLocation } from "react-router-dom";
 import { Container, Row, Col, Card, Button, Image } from "react-bootstrap";
 import { primaryColor } from "../../../constants/colors";
-import { motion } from "framer-motion"; 
+import { motion } from "framer-motion";
 
 const CourseDetails = () => {
   const location = useLocation();
@@ -44,8 +44,7 @@ const CourseDetails = () => {
             className="mb-4"
           >
             <Image src={course.image} alt="Course" className="img-fluid" />
-            <h5>Watch the Introduction</h5>
-            <div className="embed-responsive embed-responsive-16by9">
+            <div className="embed-responsive embed-responsive-16by9 my-3">
               <iframe
                 className="embed-responsive-item"
                 src={course.youtubeVideo}
@@ -70,16 +69,16 @@ const CourseDetails = () => {
               </Card.Header>
               <Card.Body>
                 <motion.ul
-                  initial={{ opacity: 0, y: 20 }} 
-                  animate={{ opacity: 1, y: 0 }} 
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5 }}
                 >
                   {course.curriculum.map((week, index) => (
                     <motion.li
                       key={index}
-                      initial={{ opacity: 0, x: -20 }} 
+                      initial={{ opacity: 0, x: -20 }}
                       animate={{ opacity: 1, x: 0 }}
-                      transition={{ duration: 0.3, delay: index * 0.1 }} 
+                      transition={{ duration: 0.3, delay: index * 0.1 }}
                     >
                       {week}
                     </motion.li>
