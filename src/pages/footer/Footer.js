@@ -28,26 +28,27 @@ const Footer = () => {
                 <div className="theme-divider2 mb-3"></div>
                 <div className="social footer-items">
                   <ul className="list-unstyled">
-                    <li>
-                      <a href="" target="_blank" rel="noopener noreferrer" className="footer-text  text-decoration-none">
-                      <span><CiInstagram /></span>  Instagram
-                      </a>
-                    </li>
-                    <li>
-                      <a href="" target="_blank" rel="noopener noreferrer" className=" footer-text   text-decoration-none">
+                  <li>
+                      <a href="https://youtube.com/@unplacededutech?si=N4l8WZ1m0J65V6tn" target="_blank" rel="noopener noreferrer" className=" footer-text   text-decoration-none">
                       <span className="mr-10"><CiYoutube /></span> Youtube
                       </a>
                     </li>
                     <li>
-                      <a href="" target="_blank" rel="noopener noreferrer" className=" footer-text    text-decoration-none">
+                      <a href="https://www.instagram.com/unplacededutech?igsh=MWVwdW9pMG8yZWYzYg==" target="_blank" rel="noopener noreferrer" className="footer-text  text-decoration-none">
+                      <span><CiInstagram /></span>  Instagram
+                      </a>
+                    </li>
+                    
+                    <li>
+                      <a href="https://www.linkedin.com/school/unplacededutech/posts/?feedView=all" target="_blank" rel="noopener noreferrer" className=" footer-text    text-decoration-none">
                       <span className="mr-11"><CiLinkedin /></span> Linkedin
                       </a>
                     </li>
-                    <li>
+                    {/* <li>
                       <a href="" target="_blank" rel="noopener noreferrer" className="footer-text  text-decoration-none">
                       <span className="mr-6"><FaTelegram /></span> Telegram
                       </a>
-                    </li>
+                    </li> */}
                   </ul>
                 </div>
               </div>
@@ -57,10 +58,10 @@ const Footer = () => {
                 <div className="social footer-items">
                   <ul className="list-unstyled">
                     <li>
-                      <a href="" className="footer-text  text-decoration-none">Python</a>
+                      <a href="#" className="footer-text  text-decoration-none">Python</a>
                     </li>
                     <li>
-                      <a href="" className="footer-text text-decoration-none">DevOps</a>
+                      <a href="#" className="footer-text text-decoration-none">DevOps</a>
                     </li>
                   </ul>
                 </div>
@@ -71,16 +72,16 @@ const Footer = () => {
                 <div className="social footer-items">
                   <ul className="list-unstyled">
                     <li>
-                      <a href="" className="footer-text text-decoration-none">Home</a>
+                      <a href="#" className="footer-text text-decoration-none">Home</a>
                     </li>
                     <li>
-                      <a href="" className="footer-text text-decoration-none">Contact Us</a>
+                      <a href="#" className="footer-text text-decoration-none">Contact Us</a>
                     </li>
                     <li>
-                      <a href="" className="footer-text text-decoration-none">Privacy</a>
+                      <a href="#" className="footer-text text-decoration-none">Privacy</a>
                     </li>
                     <li>
-                      <a href="" className="footer-text text-decoration-none">Terms and Conditions</a>
+                      <a href="#" className="footer-text text-decoration-none">Terms and Conditions</a>
                     </li>
                   </ul>
                 </div>

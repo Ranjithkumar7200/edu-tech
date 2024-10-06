@@ -6,6 +6,8 @@ import Reviews from "../Reviews/Reviews";
 import Home from "../home/Home";
 import WhyChooseUs from "../whyChooseUs/WhyChooseUs";
 import FaqSection from "../faqSection/FaqSection";
+import Mission from "../footer/mission";
+import Mentor from "../mentor/Mentor";
 
 const LandingPage = () => {
   return (
@@ -15,8 +17,10 @@ const LandingPage = () => {
       <Courses limit={3} />
       <PremiumLearning />
       <WhyChooseUs />
+      <Mission/>
+      <Mentor/>
       <Reviews />
-      <FaqSection />
+      <FaqSection /> 
     </div>
   );
 };
