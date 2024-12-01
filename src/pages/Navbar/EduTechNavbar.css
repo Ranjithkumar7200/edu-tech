@@ -29,3 +29,15 @@
 .nav-link-custom.active::after {
   width: 100%; 
 }
+.nav-link-custom {
+  color: inherit; 
+}
+
+.nav-link-custom .active-link {
+  color: #f0ad4e;
+}
+
+.dropdown-item.active, .dropdown-item:active{
+  background-color: #f0ad4e !important;
+}
+

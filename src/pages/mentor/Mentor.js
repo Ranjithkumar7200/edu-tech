@@ -52,7 +52,7 @@ const Mentor = () => {
         
         <span ><p>Accelerate Your Skills with Industry Experts on Real-Time Projects</p></span>
       </div>
-      <div className="d-flex justify-content-center align-items-center flex-column">
+      <div className="d-flex justify-content-center align-items-center flex-column mb-5">
       <div className="left-container">  < span class="google-button">vridhee</span>< span class="google-button">CGI</span> < span class="google-button">Cognizant</span></div>
       <div className=" row-container">  < span class="google-button">Capgemini</span>< span class="google-button">Wipro</span> < span class="google-button">Freelancer</span></div>
       <div className="row-container">  < span class="google-button">Accenture</span> < span class="google-button">IBM</span></div>

@@ -3,13 +3,14 @@ import { Navbar, Nav, Container, Button } from "react-bootstrap";
 import { Link, useLocation } from "react-router-dom";
 import logo from "../../assets/images/logofinal.jpg";
 import "./EduTechNavbar.css";
+import Dropdown from 'react-bootstrap/Dropdown';
 
 
 const EduTechNavbar = () => {
   const location = useLocation();
   const [activeLink, setActiveLink] = useState(location.pathname);
-  const [expanded, setExpanded] = useState(false); 
-  const navbarRef = useRef(null); 
+  const [expanded, setExpanded] = useState(false);
+  const navbarRef = useRef(null);
 
   useEffect(() => {
     setActiveLink(location.pathname);
@@ -26,13 +27,38 @@ const EduTechNavbar = () => {
     }
   };
 
-  
+
+
+  const [show, setShow] = useState(false);
+
   useEffect(() => {
     document.addEventListener("mousedown", handleClickOutside);
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
   }, []);
+
+
+  const handleMouseEnter = () => {
+    if (window.innerWidth >= 992) {
+      setShow(true);
+    }
+  };
+
+  const handleMouseLeave = () => {
+    if (window.innerWidth >= 992) {
+      setShow(false);
+    }
+  };
+  const handleToggle = (isOpen) => {
+    setShow(isOpen);
+  };
+
+    const [activeItem, setActiveItem] = useState("");
+
+  const handleItemClick = (item) => {
+    setActiveItem(item);
+  };
 
   return (
     <Navbar
@@ -42,7 +68,7 @@ const EduTechNavbar = () => {
       sticky="top"
       style={{ backgroundColor: "#FDF8EE" }}
       expanded={expanded}
-      ref={navbarRef} 
+      ref={navbarRef}
     >
       <Container>
         <Navbar.Brand as={Link} to="/" className="d-flex align-items-center">
@@ -68,9 +94,8 @@ const EduTechNavbar = () => {
               onClick={() => handleSelect("/")}
             >
               <span
-                className={`nav-link-custom ${
-                  activeLink === "/" ? "active" : ""
-                }`}
+                className={`nav-link-custom ${activeLink === "/" ? "active" : ""
+                  }`}
               >
                 Home
               </span>
@@ -82,25 +107,67 @@ const EduTechNavbar = () => {
               onClick={() => handleSelect("/courses")}
             >
               <span
-                className={`nav-link-custom ${
-                  activeLink === "/courses" ? "active" : ""
-                }`}
+                className={`nav-link-custom ${activeLink === "/courses" ? "active" : ""
+                  }`}
               >
                 Courses
               </span>
             </Nav.Link>
             <Nav.Link
               as={Link}
-              to="/community"
+              // to="/community"
               className="px-3"
-              onClick={() => handleSelect("/community")}
+            // onClick={() => handleSelect("/community")}
             >
               <span
-                className={`nav-link-custom ${
-                  activeLink === "/community" ? "active" : ""
-                }`}
+                className={`nav-link-custom ${show ? "active" : ""}`}
               >
-                Community
+
+
+
+                <Dropdown
+                  show={show}
+                  onMouseEnter={handleMouseEnter}
+                  onMouseLeave={handleMouseLeave}
+                  onToggle={handleToggle}
+                >
+                  <Dropdown.Toggle as="span" id="dropdown-basic">
+                    Community
+                  </Dropdown.Toggle>
+
+                  <Dropdown.Menu>
+                    <Dropdown.Item
+                      as={Link}
+                      to="/community"
+                      className={activeItem === "blogs" ? "active-link" : ""}
+                      onClick={() => {
+                        handleItemClick("blogs");
+                      }}
+                    >
+                      Blogs
+                    </Dropdown.Item>
+                    <Dropdown.Item
+                      as={Link}
+                      to="/interviewexpo"
+                      className={activeItem === "interviewexpo" ? "active-link" : ""}
+                      onClick={() => {
+                        handleItemClick("interviewexpo");
+                      }}
+                    >
+                      Interview Expo
+                    </Dropdown.Item>
+                    <Dropdown.Item
+                      as={Link}
+                      to="/contact"
+                      className={activeItem === "action3" ? "active-link" : ""}
+                      onClick={() => {
+                        handleItemClick("action3");
+                      }}
+                    >
+                      Contact
+                    </Dropdown.Item>
+                  </Dropdown.Menu>
+                </Dropdown>
               </span>
             </Nav.Link>
             <Nav.Link
@@ -110,9 +177,8 @@ const EduTechNavbar = () => {
               onClick={() => handleSelect("/about")}
             >
               <span
-                className={`nav-link-custom ${
-                  activeLink === "/about" ? "active" : ""
-                }`}
+                className={`nav-link-custom ${activeLink === "/about" ? "active" : ""
+                  }`}
               >
                 About Us
               </span>
@@ -124,9 +190,8 @@ const EduTechNavbar = () => {
               onClick={() => handleSelect("/contact")}
             >
               <span
-                className={`nav-link-custom ${
-                  activeLink === "/contact" ? "active" : ""
-                }`}
+                className={`nav-link-custom ${activeLink === "/contact" ? "active" : ""
+                  }`}
               >
                 Contact
               </span>
