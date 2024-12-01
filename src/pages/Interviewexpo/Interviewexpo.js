@@ -26,14 +26,20 @@ const Interviewexpo = () => {
                       <Card.Title className="cardTitle text">{member.Company}</Card.Title>
                       <Card.Title className=" text">Interview</Card.Title>
                       <Card.Subtitle className="mb-3 text-muted text">Experience</Card.Subtitle>
-                      <a
+                    <div>
+                    <a
                         href={zipUrl}
                         download
-                        style={{ textDecoration: "none", color: "inherit" }} className="btn btn-warning text-white mt-auto"
-                      > Download Material
+                        style={{ textDecoration: "none", color: "inherit" }} 
+                        className={`btn btn-warning text-white mt-auto   downloadbtn ${
+                          !member.Download ? "disabled" : ""
+                        }`}
+                        aria-disabled={!member.Download}   > click 
                        
                       </a>
                     </div>
+                    </div>
+                    
 
 
                     {/* <Card.Text>{member.description}</Card.Text> */}
