@@ -1,0 +1,34 @@
+.textContainer{
+    display: flex; 
+    justify-content: space-between;
+    /* border: red 1px solid; */
+    align-items: center;
+    align-content: center;
+}
+.cardbody{
+    background-color: #fdf8ee !important;
+}
+.cardTitle{
+    color: #f0ad4e !important;
+    margin-right: 10px;
+}
+.text{
+    text-align: left;
+}
+
+@media (max-width: 576px) {
+   .mobile{
+    width: 150px;
+    height: 200px;
+   }
+}
+@media (min-width: 992px)  {
+    .lap{
+        width: 200px;
+        height: 250px;
+    }
+}
+.downloadbtn{
+    margin-top: 52px !important;
+    margin-left: 68px !important;
+}
