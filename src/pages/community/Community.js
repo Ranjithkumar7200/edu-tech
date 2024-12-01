@@ -31,9 +31,13 @@ const Community = () => {
         ))}
       </Row>
       <div className="text-center mt-5">
-        <Button variant="warning" size="lg">
-          Join the Community
-        </Button>
+      <Button
+  variant="warning"
+  size="lg"
+  onClick={() => window.open("https://chat.whatsapp.com/FnPeH6jdubOBzC7HJrNftt", "_blank")}
+>
+  Join the Community
+</Button>
       </div>
     </Container>
   );

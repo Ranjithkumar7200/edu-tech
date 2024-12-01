@@ -1,151 +1,126 @@
-import memberImg from "../../assets/images/student.png";
-
+import memberImg from "../../assets/images/student.png"; // Default
+import student1 from "../../assets/images/persons/personlogo.jpg"; // Male
+import student2 from "../../assets/images/persons/personlogow4.jpg"; // Female
+import student3 from "../../assets/images/persons/personlogom2.jpg"; // Male
+import student4 from "../../assets/images/persons/personlogom3.jpg"; // Male
+import student5 from "../../assets/images/persons/personlogom4.jpg"; // Male
+import student6 from "../../assets/images/persons/personlogoW2.jpg"; // Female
+import student7 from "../../assets/images/persons/personlogow3.jpg"; // Female
+import student8 from "../../assets/images/persons/personlogow4.jpg"; // Female
 export const membersData = [
+ 
   {
-    name: "John Doe",
+    name: "Ravi Kumar",
     role: "Educator",
     avatar: memberImg,
     description:
-      "John is a passionate educator who loves sharing knowledge about science and technology.",
+      "Ravi is a dedicated educator with a strong foundation in computer science. He simplifies complex concepts in Full Stack Development, helping students gain confidence in coding and problem-solving.",
   },
   {
-    name: "Jane Smith",
-    role: "Student",
-    avatar: memberImg,
-    description:
-      "Jane is an enthusiastic learner exploring programming and web development.",
-  },
-  {
-    name: "Emily Johnson",
+    name: "Srinivas Rao",
     role: "Industry Expert",
-    avatar: memberImg,
+    avatar: student3,
     description:
-      "Emily brings years of experience in AI and machine learning to our community.",
+      "Srinivas has over a decade of experience in Artificial Intelligence and Machine Learning. He equips learners with the latest advancements in AI, Python, and data-driven decision-making.",
   },
   {
-    name: "Michael Brown",
+    name: "Harsha Vardhan",
     role: "Content Creator",
-    avatar: memberImg,
+    avatar: student4,
     description:
-      "Michael creates engaging content to help learners master complex topics easily.",
+      "Harsha designs interactive tutorials and projects, focusing on Angular and Java. His engaging content helps students master front-end development and backend integration.",
   },
   {
-    name: "Alice Davis",
-    role: "Mentor",
-    avatar: memberImg,
-    description:
-      "Alice is a dedicated mentor guiding students through their educational journeys.",
-  },
-  {
-    name: "Chris Wilson",
+    name: "Karthik Reddy",
     role: "Data Scientist",
-    avatar: memberImg,
+    avatar: student5,
     description:
-      "Chris specializes in data analysis and helps learners understand data-driven decision making.",
+      "Karthik specializes in Python for data analysis and machine learning. He teaches practical applications of data science, preparing students for competitive coding and real-world challenges.",
   },
   {
-    name: "Sarah Miller",
-    role: "Graphic Designer",
-    avatar: memberImg,
-    description:
-      "Sarah has a knack for visual communication and teaches design principles to aspiring designers.",
-  },
-  {
-    name: "David Garcia",
+    name: "Venkatesh Babu",
     role: "Software Engineer",
-    avatar: memberImg,
+    avatar: student3,
     description:
-      "David shares his expertise in software development and coding with students.",
+      "Venkatesh is an expert in Java and Spring Boot, sharing hands-on experience in building scalable backend services. He also guides learners on system design and coding interview preparation.",
   },
   {
-    name: "Sophia Martinez",
-    role: "Web Developer",
-    avatar: memberImg,
-    description:
-      "Sophia helps students learn web technologies and best practices in development.",
-  },
-  {
-    name: "Matthew Rodriguez",
-    role: "Educator",
-    avatar: memberImg,
-    description:
-      "Matthew focuses on interactive learning techniques to keep students engaged.",
-  },
-  {
-    name: "Olivia Hernandez",
-    role: "Student",
-    avatar: memberImg,
-    description:
-      "Olivia is exploring the world of artificial intelligence and machine learning.",
-  },
-  {
-    name: "Daniel Lee",
-    role: "Industry Expert",
-    avatar: memberImg,
-    description:
-      "Daniel brings a wealth of knowledge in cybersecurity to help learners stay safe online.",
-  },
-  {
-    name: "Isabella Clark",
-    role: "Content Writer",
-    avatar: memberImg,
-    description:
-      "Isabella writes insightful articles that inspire and educate our community members.",
-  },
-  {
-    name: "Ethan Lewis",
-    role: "Mobile App Developer",
-    avatar: memberImg,
-    description:
-      "Ethan teaches students how to create engaging mobile applications from scratch.",
-  },
-  {
-    name: "Mia Walker",
-    role: "Project Manager",
-    avatar: memberImg,
-    description:
-      "Mia guides students through project management methodologies and best practices.",
-  },
-  {
-    name: "James Hall",
-    role: "Digital Marketer",
-    avatar: memberImg,
-    description:
-      "James shares strategies for successful digital marketing in today's online landscape.",
-  },
-  {
-    name: "Charlotte Allen",
-    role: "Entrepreneur",
-    avatar: memberImg,
-    description:
-      "Charlotte inspires learners with her journey in entrepreneurship and business development.",
-  },
-  {
-    name: "Amelia Young",
-    role: "Research Analyst",
-    avatar: memberImg,
-    description:
-      "Amelia helps students understand the importance of research in academic and professional fields.",
-  },
-  {
-    name: "William King",
+    name: "Satish Varma",
     role: "Finance Expert",
-    avatar: memberImg,
+    avatar: student5,
     description:
-      "William teaches financial literacy and investment strategies to help students manage money wisely.",
+      "Satish blends technology with finance, teaching students how to build financial applications using Full Stack tools and providing insights into financial data analysis.",
   },
   {
-    name: "Ava Scott",
-    role: "User Experience Designer",
-    avatar: memberImg,
-    description:
-      "Ava focuses on creating intuitive designs that enhance user experiences in digital products.",
-  },
-  {
-    name: "Lucas Wright",
+    name: "Naveen Kumar",
     role: "Blockchain Developer",
-    avatar: memberImg,
+    avatar: student3,
     description:
-      "Lucas shares insights into blockchain technology and its applications in various industries.",
+      "Naveen brings cutting-edge knowledge of blockchain and its integration with Full Stack applications. His sessions cover smart contracts, decentralized applications, and emerging technologies.",
+  },
+
+  // Female Members
+  {
+    name: "Anusha Reddy",
+    role: "Student",
+    avatar: student2,
+    description:
+      "Anusha is an aspiring Full Stack Developer passionate about mastering HTML, CSS, JavaScript, and Python. She actively participates in projects to strengthen her technical foundation.",
+  },
+  {
+    name: "Lakshmi Devi",
+    role: "Mentor",
+    avatar: student6,
+    description:
+      "Lakshmi is a seasoned mentor specializing in Java and Angular. She guides students through complex projects and ensures they are well-prepared for technical interviews.",
+  },
+  {
+    name: "Meghana Varma",
+    role: "Graphic Designer",
+    avatar: student7,
+    description:
+      "Meghana combines creativity with technology, teaching design principles essential for crafting intuitive user interfaces in Full Stack projects.",
+  },
+  {
+    name: "Sravani Rao",
+    role: "Web Developer",
+    avatar: student8,
+    description:
+      "Sravani has extensive experience in Angular and React. She empowers students to build dynamic web applications and adopt industry best practices.",
+  },
+  {
+    name: "Swapna Kiran",
+    role: "Content Writer",
+    avatar: student7,
+    description:
+      "Swapna creates impactful technical content, focusing on the latest trends in Full Stack development, helping learners stay updated and exam-ready.",
+  },
+  {
+    name: "Tejaswini Rao",
+    role: "Project Manager",
+    avatar: student6,
+    description:
+      "Tejaswini provides students with insights into Agile methodologies and project management tools, enabling them to manage Full Stack projects efficiently.",
+  },
+  {
+    name: "Chandana Rao",
+    role: "Entrepreneur",
+    avatar: student1,
+    description:
+      "Chandana shares her journey of building tech startups. She inspires students to innovate, emphasizing the importance of problem-solving using Full Stack and emerging technologies.",
+  },
+  {
+    name: "Pooja Rani",
+    role: "Student",
+    avatar: student2,
+    description:
+      "Pooja is exploring AI and Full Stack Development. Her focus is on mastering Python and Java to build intelligent, user-friendly applications.",
+  },
+  {
+    name: "Sushma Rani",
+    role: "User Experience Designer",
+    avatar: student7,
+    description:
+      "Sushma focuses on enhancing user experience through intuitive design, emphasizing the importance of UI/UX in modern Full Stack applications.",
   },
 ];

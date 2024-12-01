@@ -1,0 +1,31 @@
+.course-card {
+    position: relative;
+    transition: all 0.3s ease;
+  }
+  
+  .course-card.blurred {
+    filter: blur(5px);
+    pointer-events: none; /* Prevent interaction */
+    opacity: 0.6;
+  }
+  
+  .course-card img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  .blurred {
+    filter: blur(1px);
+    pointer-events: none; 
+    opacity: 0.8;
+  }
+  
+  .card-img-top.blurred-img {
+    filter: blur(1px);
+    transition: all 0.3s ease;
+  }
+  .cardsbutton{
+    display: flex;
+    justify-content: space-between;
+  }
+  

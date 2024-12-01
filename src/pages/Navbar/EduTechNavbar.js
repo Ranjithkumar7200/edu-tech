@@ -4,6 +4,7 @@ import { Link, useLocation } from "react-router-dom";
 import logo from "../../assets/images/logo.jpeg";
 import "./EduTechNavbar.css";
 
+
 const EduTechNavbar = () => {
   const location = useLocation();
   const [activeLink, setActiveLink] = useState(location.pathname);
@@ -32,12 +33,12 @@ const EduTechNavbar = () => {
         >
           <img
             src={logo}
-            alt="EduTech Logo"
+            alt="broadcodes Logo"
             width="40"
             height="40"
             className="d-inline-block align-top me-2"
           />
-          EduTech
+          broadcodes
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
@@ -115,7 +116,7 @@ const EduTechNavbar = () => {
           </Nav>
 
           <Nav className="d-flex">
-            <Button variant="warning" as={Link} to="/join-group">
+            <Button variant="warning" as={Link} onClick={() => handleSelect("/contact")} to="/contact">
               Join Group
             </Button>
           </Nav>

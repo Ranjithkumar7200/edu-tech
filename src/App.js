@@ -12,14 +12,13 @@ function App() {
   return (
     <Router>
       <EduTechNavbar />
-
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/courses" element={<Courses />} />
         <Route path="/about" element={<AboutUs />} />
         <Route path="/contact" element={<ContactUs />} />
         <Route path="/community" element={<Community />} />
-      </Routes>
+        </Routes>
       <Footer />
     </Router>
   );

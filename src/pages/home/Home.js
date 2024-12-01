@@ -3,8 +3,13 @@ import { Button, Col, Container, Row } from "react-bootstrap";
 import LandingImg from "../../assets/images/OBJECTS.png";
 import group1 from "../../assets/images/group1.png";
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 
 const Home = () => {
+  const navigate = useNavigate();
+  const handleNavigate = () => {
+    navigate("/contact");
+  }
   return (
     <div
       className="position-relative pt-lg-3 pt-1 pb-lg-1 pb-0"
@@ -24,7 +29,7 @@ const Home = () => {
                 Unlock your potential with our expert-led online courses. Start
                 learning today and shape your tomorrow.
               </p>
-              <Button variant="warning rounded" size="sm" className="px-4 py-2">
+              <Button variant="warning rounded" size="sm" className="px-4 py-2" onClick={handleNavigate}>
                 Join Group
               </Button>
             </Col>

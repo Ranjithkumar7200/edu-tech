@@ -4,6 +4,7 @@ import { Formik, Form as FormikForm, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import emailjs from "emailjs-com";
 import { toast } from "react-toastify";
+import contactgif from "../../assets/images/gif.gif";
 
 const ContactUs = () => {
   const SERVICE_ID = "service_ngkgoix";
@@ -44,9 +45,9 @@ const ContactUs = () => {
     <Container className="my-5">
       <h2 className="mb-4 text-center">Contact Us</h2>
       <Row className="align-items-center">
-        <Col lg={6} className="d-none d-lg-block">
+        <Col lg={6} className=" d-lg-block d-sm-block">
           <Image
-            src="https://via.placeholder.com/600x400"
+            src={contactgif}
             alt="Contact Us"
             fluid
           />

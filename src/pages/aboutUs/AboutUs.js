@@ -1,14 +1,16 @@
 import React from 'react';
 import { Container, Row, Col, Button } from 'react-bootstrap';
+import { useNavigate } from "react-router-dom";
 
 const AboutUs = () => {
+  const navigate = useNavigate();
   return (
     <Container className="my-5">
       <Row className="justify-content-center text-center mb-5">
         <Col md={10}>
           <h2 className="display-4">About Us</h2>
           <p className="text-secondary">
-            Welcome to <strong>EDU TECH</strong>, where education meets innovation. Our mission is to revolutionize learning by making it more accessible, engaging, and effective for learners across the globe. In today's fast-changing world, knowledge is power, and we aim to empower learners with the tools they need to thrive in both their personal and professional lives.
+            Welcome to <strong>BroadCodes</strong>, where education meets innovation. Our mission is to revolutionize learning by making it more accessible, engaging, and effective for learners across the globe. In today's fast-changing world, knowledge is power, and we aim to empower learners with the tools they need to thrive in both their personal and professional lives.
           </p>
         </Col>
       </Row>
@@ -23,7 +25,7 @@ const AboutUs = () => {
         <Col md={6}>
           <h3>What We Do</h3>
           <p>
-            At <strong>EDU TECH</strong>, we offer a comprehensive suite of digital learning tools and resources that cater to learners at every stage of their educational journey. Our courses range from foundational subjects to specialized skills for professional development, all curated by leading industry experts and educators.
+            At <strong>BroadCodes</strong>, we offer a comprehensive suite of digital learning tools and resources that cater to learners at every stage of their educational journey. Our courses range from foundational subjects to specialized skills for professional development, all curated by leading industry experts and educators.
           </p>
         </Col>
       </Row>
@@ -66,7 +68,7 @@ const AboutUs = () => {
         <Col md={6}>
           <h3>Our Team</h3>
           <p>
-            Behind <strong>EDU TECH</strong> is a diverse group of passionate educators, technology enthusiasts, and industry experts. We bring together years of experience in education, software development, and content creation to deliver the best possible learning experience.
+            Behind <strong>BroadCodes</strong> is a diverse group of passionate educators, technology enthusiasts, and industry experts. We bring together years of experience in education, software development, and content creation to deliver the best possible learning experience.
           </p>
         </Col>
         <Col md={6}>
@@ -89,9 +91,9 @@ const AboutUs = () => {
         <Col md={10}>
           <h3>Join Us Today</h3>
           <p className="text-secondary">
-            Whether you are a student, professional, or lifelong learner, <strong>EDU TECH</strong> is here to help you achieve your educational goals. Join our vibrant community of learners today, and take the next step toward your brighter future.
+            Whether you are a student, professional, or lifelong learner, <strong>BroadCodes</strong> is here to help you achieve your educational goals. Join our vibrant community of learners today, and take the next step toward your brighter future.
           </p>
-          <Button variant="warning" >
+          <Button variant="warning"  onClick={() => navigate('/contact')}  >
             Get Started
           </Button>
         </Col>

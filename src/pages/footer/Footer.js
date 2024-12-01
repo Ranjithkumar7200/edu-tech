@@ -16,11 +16,11 @@ const Footer = () => {
               <div className="col-md-3">
                 <div className="footer-logo">
                   <img src={logo} className="w-50" alt="logo" />
-                  <span className="h5 fw-bold">unplacedEdutech</span>
+                  <span className="h5 fw-bold">broadcodes</span>
                 </div>
                 
                 <p className="mt-3">
-                  unplacedEdutech offers industrial training in emerging technologies like Python, Data Science, Artificial Intelligence, and DevOps in Telugu,English,tamil.
+                  broadcodes offers industrial training in emerging technologies like Python, Data Science, Artificial Intelligence, and DevOps in Telugu,English,tamil.
                 </p>
               </div>
               <div className="col-md-3">
@@ -29,18 +29,18 @@ const Footer = () => {
                 <div className="social footer-items">
                   <ul className="list-unstyled">
                   <li>
-                      <a href="https://youtube.com/@unplacededutech?si=N4l8WZ1m0J65V6tn" target="_blank" rel="noopener noreferrer" className=" footer-text   text-decoration-none">
+                      <a href="https://youtube.com/@broadcodes?si=N4l8WZ1m0J65V6tn" target="_blank" rel="noopener noreferrer" className=" footer-text   text-decoration-none">
                       <span className="mr-10"><CiYoutube /></span> Youtube
                       </a>
                     </li>
                     <li>
-                      <a href="https://www.instagram.com/unplacededutech?igsh=MWVwdW9pMG8yZWYzYg==" target="_blank" rel="noopener noreferrer" className="footer-text  text-decoration-none">
+                      <a href="https://www.instagram.com/broadcodes?igsh=MWVwdW9pMG8yZWYzYg==" target="_blank" rel="noopener noreferrer" className="footer-text  text-decoration-none">
                       <span><CiInstagram /></span>  Instagram
                       </a>
                     </li>
                     
                     <li>
-                      <a href="https://www.linkedin.com/school/unplacededutech/posts/?feedView=all" target="_blank" rel="noopener noreferrer" className=" footer-text    text-decoration-none">
+                      <a href="https://www.linkedin.com/school/broadcodes/posts/?feedView=all" target="_blank" rel="noopener noreferrer" className=" footer-text    text-decoration-none">
                       <span className="mr-11"><CiLinkedin /></span> Linkedin
                       </a>
                     </li>
@@ -90,7 +90,7 @@ const Footer = () => {
             <hr />
             <div className="row">
               <div className="col-md-6">
-                <p className="m-0 text-center fw-bold">Copyright © 2024 unplacededutech</p>
+                <p className="m-0 text-center fw-bold">Copyright © 2024 broadcodes</p>
               </div>
              
             </div>

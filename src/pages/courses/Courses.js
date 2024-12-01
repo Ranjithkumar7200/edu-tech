@@ -5,7 +5,7 @@ import { courses } from "./courseItems";
 import { useNavigate } from "react-router-dom";
 
 const Courses = ({ limit }) => {
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   const displayedCourses = limit ? courses.slice(0, limit) : courses;
 
   return (
@@ -13,8 +13,7 @@ const Courses = ({ limit }) => {
       <header className="text-center my-5">
         <h2>Our Courses</h2>
         <p className="text-secondary text-center">
-          Explore our industry-leading courses designed to empower your learning
-          journey with practical skills.
+          Explore our industry-leading courses designed to empower your learning journey with practical skills.
         </p>
       </header>
       <Container>
@@ -26,12 +25,15 @@ const Courses = ({ limit }) => {
           ))}
         </Row>
         <div className="d-flex align-items-center justify-content-center my-4">
-          {limit === 3 ? (
-            <Button onClick={()=>navigate('/courses')} className="text-light" variant="warning" type="button">
+          {limit === 3 && (
+            <Button
+              onClick={() => navigate('/courses')}
+              className="text-light"
+              variant="warning"
+              type="button"
+            >
               Get More Courses
             </Button>
-          ) : (
-            <></>
           )}
         </div>
       </Container>

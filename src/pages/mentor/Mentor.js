@@ -1,39 +1,45 @@
 import React from "react";
 import "./Mentor.css";
 import { Card, Col,Row,Image } from 'react-bootstrap';
+import bhagya from "../../assets/images/bhagya.jpg";
+import satish from "../../assets/images/satish.jpg";
+import ranjith from "../../assets/images/ranjith.jpg";
+import sriman from "../../assets/images/sriman.jpg";
+import lavanya from "../../assets/images/lavanya.jpg";
+import rohith from "../../assets/images/rohith.jpg";
 
 const Mentor = () => {
 
     const members = [
         {
-          name: "Akshay Saini",
-          avatar: "https://images.filmibeat.com/img/popcorn/profile_photos/prabhas-20231013142131-4221.jpg",
-          role: "Founder - NamasteDev.com",
+          name: "satish",
+          avatar: satish,
+          role: "React-broadcodes",
         },
         {
-            name: "Akshay Saini",
-            avatar: "https://images.filmibeat.com/img/popcorn/profile_photos/prabhas-20231013142131-4221.jpg",
-            role: "Founder - NamasteDev.com",
+            name: "Shriman",
+            avatar: sriman ,
+            role: "AI - broadcodes",
           },
           {
-            name: "Akshay Saini",
-            avatar: "https://images.filmibeat.com/img/popcorn/profile_photos/prabhas-20231013142131-4221.jpg",
-            role: "Founder - NamasteDev.com",
+            name: "Ranjith",
+            avatar: ranjith,
+            role: "Flutter  - broadcodes",
           },
           {
-            name: "Akshay Saini",
-            avatar: "https://images.filmibeat.com/img/popcorn/profile_photos/prabhas-20231013142131-4221.jpg",
-            role: "Founder - NamasteDev.com",
+            name: "Bhagya",
+            avatar: bhagya,
+            role: "React - broadcodes",
           },
           {
-            name: "Akshay Saini",
-            avatar: "https://images.filmibeat.com/img/popcorn/profile_photos/prabhas-20231013142131-4221.jpg",
-            role: "Founder - NamasteDev.com",
+            name: "Rohith",
+            avatar: rohith,
+            role: "Angular,Spring Boot - broadcodes",
           },
           {
-            name: "Akshay Saini",
-            avatar: "https://images.filmibeat.com/img/popcorn/profile_photos/prabhas-20231013142131-4221.jpg",
-            role: "Founder - NamasteDev.com",
+            name: "Lavanya",
+            avatar: lavanya,
+            role: "Guideware,java - broadcodes",
           },
     ];
   return (
