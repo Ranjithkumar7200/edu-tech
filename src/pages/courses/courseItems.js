@@ -1,4 +1,4 @@
-import courseImg from "../../assets/images/courses.png";
+import courseImg from "../../assets/images/courses.png"; 
 
 export const courses = [
   {

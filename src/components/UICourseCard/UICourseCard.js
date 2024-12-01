@@ -1,18 +1,18 @@
 import React from "react";
 import { Card, Button } from "react-bootstrap";
 import { Clock, MonitorPlay, Download, Star } from "lucide-react";
-import './UICourseCard.css';  // Make sure the CSS file is imported
 import { useNavigate } from "react-router-dom";
+import "./UICourseCard.css";
 
 const UICourseCard = ({ course }) => {
-
- const navigate = useNavigate();
+  const navigate = useNavigate();
   return (
     <Card className={`shadow-sm h-100 ${!course.launched ? 'blurred' : ''}`}>
       <Card.Img
+       onClick={() => navigate("/course-details", { state: { course } })} 
         variant="top"
         src={course.image}
-        alt={`${course.title} thumbnail`}
+        alt={`${course.title} thumbnail`} 
         className={`${!course.launched ? 'blurred-img' : ''}`}
       />
       <Card.Body className="d-flex flex-column">

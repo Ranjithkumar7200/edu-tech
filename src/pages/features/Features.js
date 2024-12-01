@@ -1,8 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { feature } from "./featureItems";
 import { Col, Container, Row } from "react-bootstrap";
+import AOS from "aos";
+
 
 const Features = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
+
   return (
     <div>
       <Container className="bg-warning px-5 my-5 py-4 rounded">
@@ -14,6 +20,7 @@ const Features = () => {
               md={6}
               lg={4}
               className="d-flex justify-content-center"
+              data-aos="fade-up"
             >
               <div className="d-flex flex-column flex-lg-row justify-content-between align-items-lg-start align-items-center w-100">
                 <div
