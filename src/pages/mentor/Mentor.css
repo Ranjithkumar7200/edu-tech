@@ -1,0 +1,98 @@
+.background-color{
+    background-color:#fdf8ee ;
+}
+.card-shape{
+   
+    border: black  ;
+    --bs-card-border-color:0px !important;
+}
+.scrollable-cards-container {
+    height: 400px; 
+    overflow-y: auto; 
+    padding: 20px;
+}
+
+
+
+
+
+
+
+  
+  @media (max-width: 576px) {
+
+    .background{
+
+        background-color:#fdf8ee ;
+        margin:0px !important;
+        display: flex;
+       flex-direction: column;
+    }
+    .text-font{
+        align-items: center;
+        text-align: center;
+    }
+    .google-button {
+        background-color: transparent;
+        border: 2px solid black;
+        border-radius: 2px;
+        padding: 5px 10px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 8px;
+        font-weight: bold;
+        color: black;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        margin: 5px;
+      }
+  }
+  @media (min-width: 992px)  {
+
+
+    .google-button {
+        background-color: transparent;
+        border: 2px solid black;
+        border-radius: 4px;
+        padding: 10px 20px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+        font-weight: bold;
+        color: black;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        margin: 5px;
+      }
+      .row-container{
+        padding-top: 20px;
+      }
+      .right-container{
+        margin-left: 80px;
+        margin-top: 50px;
+        padding-left: 50px;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    .left-container{
+        
+        padding-left: 50px;
+        padding-top: 80px;
+    }
+    .text-font{
+        font-size: 2.5rem;
+        line-height: 1.2;
+        font-weight: 900;
+        text-align: left;
+        margin-bottom: 1rem;
+        
+        
+        
+    }
+    .background{
+
+        background-color:#fdf8ee ;
+        margin:0px !important;
+        display: flex;
+        justify-content: space-between;
+    }
+      
+  }

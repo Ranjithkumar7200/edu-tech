@@ -42,9 +42,13 @@ const Community = () => {
           animate={{ opacity: 1 }} 
           transition={{ duration: 0.5, delay: 0.5 }} 
         >
-          <Button variant="warning" size="lg">
-            Join the Community
-          </Button>
+        <Button
+  variant="warning"
+  size="lg"
+  onClick={() => window.open("https://chat.whatsapp.com/FnPeH6jdubOBzC7HJrNftt", "_blank")}
+>
+    Join the Community
+  </Button>
         </motion.div>
       </div>
     </Container>

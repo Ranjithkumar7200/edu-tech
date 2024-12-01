@@ -3,6 +3,10 @@
     background-color:#fdf8ee ;
     margin:0px !important;
 }
+.text-color{
+    color:#ffbf00;
+
+}
 .m-bt{
     margin-bottom: 0px !important;
 }
@@ -27,6 +31,9 @@
     .footer-items {
       text-align: left;
     }
+    .text-container{
+        margin: 20px;
+    }
   }
 
   @media (min-width: 992px)  {
@@ -38,6 +45,10 @@
     }
     .mr-6 {
         margin-right: 6px;
+    }
+    .text-container{
+        margin-left: 108px;
+        margin-right:108px;
     }
   }
 

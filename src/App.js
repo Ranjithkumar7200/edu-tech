@@ -12,22 +12,20 @@ import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 
 function App() {
   return (
-    <>
-      <Router>
-        <ScrollToTop />
-        <EduTechNavbar />
+    <Router>
+      <ScrollToTop />
+      <EduTechNavbar />
 
-        <Routes>
-          <Route path="/" element={<LandingPage />} />
-          <Route path="/courses" element={<Courses />} />
-          <Route path="/course-details" element={<CourseDetails />} />
-          <Route path="/about" element={<AboutUs />} />
-          <Route path="/contact" element={<ContactUs />} />
-          <Route path="/community" element={<Community />} />
-        </Routes>
-        <Footer />
-      </Router>
-    </>
+      <Routes>
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/courses" element={<Courses />} />
+        <Route path="/course-details" element={<CourseDetails />} />
+        <Route path="/about" element={<AboutUs />} />
+        <Route path="/contact" element={<ContactUs />} />
+        <Route path="/community" element={<Community />} />
+      </Routes>
+      <Footer />
+    </Router>
   );
 }
 

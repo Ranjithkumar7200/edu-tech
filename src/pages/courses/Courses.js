@@ -7,11 +7,14 @@ import { motion } from "framer-motion";
 
 const Courses = ({ limit }) => {
   const navigate = useNavigate();
+ 
   const displayedCourses = limit ? courses.slice(0, limit) : courses;
 
   return (
     <div className="my-5">
       <header className="text-center my-5">
+     
+
         <motion.h2
           initial={{ opacity: 0, y: -20 }} 
           animate={{ opacity: 1, y: 0 }} 
@@ -44,26 +47,15 @@ const Courses = ({ limit }) => {
           ))}
         </Row>
         <div className="d-flex align-items-center justify-content-center my-4">
-          {limit === 3 ? (
-            <motion.div
-              initial={{ opacity: 0, scale: 0.8 }} 
-              animate={{ opacity: 1, scale: 1 }} 
-              transition={{
-                duration: 0.3,
-                delay: displayedCourses.length * 0.1,
-              }} 
+          {limit === 3 && (
+            <Button
+              onClick={() => navigate('/courses')}
+              className="text-light"
+              variant="warning"
+              type="button"
             >
-              <Button
-                onClick={() => navigate("/courses")}
-                className="text-light"
-                variant="warning"
-                type="button"
-              >
-                Get More Courses
-              </Button>
-            </motion.div>
-          ) : (
-            <></>
+              Get More Courses
+            </Button>
           )}
         </div>
       </Container>

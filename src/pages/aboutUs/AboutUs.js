@@ -1,8 +1,10 @@
-import React from "react";
-import { Container, Row, Col, Button } from "react-bootstrap";
+import React from 'react';
+import { Container, Row, Col, Button } from 'react-bootstrap';
+import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 
 const AboutUs = () => {
+  const navigate = useNavigate();
   return (
     <Container className="my-5">
       <Row className="justify-content-center text-center mb-5">
@@ -21,7 +23,7 @@ const AboutUs = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            Welcome to <strong>EDU TECH</strong>, where education meets
+            Welcome to <strong>BroadCodes</strong>, where education meets
             innovation. Our mission is to revolutionize learning by making it
             more accessible, engaging, and effective for learners across the
             globe. In today's fast-changing world, knowledge is power, and we
@@ -53,6 +55,10 @@ const AboutUs = () => {
           </motion.p>
         </Col>
         <Col md={6}>
+          <h3>What We Do</h3>
+          <p>
+            At <strong>BroadCodes</strong>, we offer a comprehensive suite of digital learning tools and resources that cater to learners at every stage of their educational journey. Our courses range from foundational subjects to specialized skills for professional development, all curated by leading industry experts and educators.
+          </p>
           <motion.h3
             initial={{ opacity: 0, y: -30 }}
             animate={{ opacity: 1, y: 0 }}
@@ -147,23 +153,10 @@ const AboutUs = () => {
 
       <Row className="mb-5">
         <Col md={6}>
-          <motion.h3
-            initial={{ opacity: 0, y: -30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-          >
-            Our Team
-          </motion.h3>
-          <motion.p
-            initial={{ opacity: 0, y: -30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.4 }}
-          >
-            Behind <strong>EDU TECH</strong> is a diverse group of passionate
-            educators, technology enthusiasts, and industry experts. We bring
-            together years of experience in education, software development, and
-            content creation to deliver the best possible learning experience.
-          </motion.p>
+          <h3>Our Team</h3>
+          <p>
+            Behind <strong>BroadCodes</strong> is a diverse group of passionate educators, technology enthusiasts, and industry experts. We bring together years of experience in education, software development, and content creation to deliver the best possible learning experience.
+          </p>
         </Col>
         <Col md={6}>
           <motion.h3
@@ -200,31 +193,13 @@ const AboutUs = () => {
 
       <Row className="justify-content-center text-center">
         <Col md={10}>
-          <motion.h3
-            initial={{ opacity: 0, y: -30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-          >
-            Join Us Today
-          </motion.h3>
-          <motion.p
-            className="text-secondary"
-            initial={{ opacity: 0, y: -30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.4 }}
-          >
-            Whether you are a student, professional, or lifelong learner,{" "}
-            <strong>EDU TECH</strong> is here to help you achieve your
-            educational goals. Join our vibrant community of learners today, and
-            take the next step toward your brighter future.
-          </motion.p>
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.5, delay: 0.6 }}
-          >
-            <Button variant="warning">Get Started</Button>
-          </motion.div>
+          <h3>Join Us Today</h3>
+          <p className="text-secondary">
+            Whether you are a student, professional, or lifelong learner, <strong>BroadCodes</strong> is here to help you achieve your educational goals. Join our vibrant community of learners today, and take the next step toward your brighter future.
+          </p>
+          <Button variant="warning"  onClick={() => navigate('/contact')}  >
+            Get Started
+          </Button>
         </Col>
       </Row>
     </Container>
