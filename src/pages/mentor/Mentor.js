@@ -69,7 +69,7 @@ const Mentor = () => {
                   roundedCircle
                   width={100}
                   height={100}
-                  className="mb-3"
+                  className="mb-3 imagecontain"
                 />
                 <Card.Title>Meet Your Mentor</Card.Title>
                 <Card.Subtitle className="mb-3 text-muted">{member.name}</Card.Subtitle>

@@ -53,7 +53,7 @@ const EduTechNavbar = () => {
             height="40"
             className="d-inline-block align-top me-2"
           />
-          broadcodes
+          BroadCodes
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"

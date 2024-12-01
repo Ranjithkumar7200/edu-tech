@@ -94,5 +94,10 @@
         display: flex;
         justify-content: space-between;
     }
+    .imagecontain{
+        object-fit: contain;
+        border-radius: 50%;
+        transition: transform 0.3s ease-in-out;
+    }
       
   }
