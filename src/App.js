@@ -11,6 +11,8 @@ import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import CourseDetails from "./pages/courses/CourseDetails/CourseDetails";
 import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 
+import InterviewQues from "./pages/Interviewexpo/SpecificInterview/InterviewQues";
+
 function App() {
   return (
     <Router>
@@ -25,6 +27,8 @@ function App() {
         <Route path="/contact" element={<ContactUs />} />
         <Route path="/community" element={<Community />} />
         <Route path="/interviewexpo" element={<Interviewexpo />} />
+        <Route path="/" element={<Interviewexpo />} />
+        <Route path="/interview-questions/:company" element={<InterviewQues />} />
       </Routes>
       <Footer />
     </Router>

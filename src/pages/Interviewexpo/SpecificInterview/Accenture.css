@@ -1,0 +1,17 @@
+.background-color{
+    background-color:#fdf8ee ;
+}
+.headContainer{
+    text-align: center !important;
+    /* border: red 1px solid; */
+}
+.text-align{
+    text-align: center !important;
+}
+.my-5 {
+    margin-top: 3rem !important;
+ margin-bottom: 0px !important;
+}
+.color{
+    color: #f0ad4e !important;
+}

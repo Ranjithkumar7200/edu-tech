@@ -1,9 +1,10 @@
 .textContainer{
     display: flex; 
     justify-content: space-between;
-    /* border: red 1px solid; */
+  
     align-items: center;
     align-content: center;
+  /* flex-direction: row;  */
 }
 .cardbody{
     background-color: #fdf8ee !important;
@@ -20,15 +21,35 @@
    .mobile{
     width: 150px;
     height: 200px;
+    border-radius: 35px;
    }
 }
 @media (min-width: 992px)  {
     .lap{
-        width: 200px;
-        height: 250px;
+        width: 150px;
+        height: 200px;
+        border-radius: 35px;
     }
 }
 .downloadbtn{
     margin-top: 52px !important;
     margin-left: 68px !important;
+   
+    
+}
+.btnContainer{
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    align-items: end;
+    align-content: end;
+}
+.leftContainer{
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+}
+.rightContainer{
+    display: flex;
+    justify-content: end;
 }
