@@ -2,7 +2,7 @@ import {React ,useState}  from "react";
 import { Container, Row, Col, Card, Image, Button } from "react-bootstrap";
 import { membersData } from "./InterviewItems";
 import { motion } from 'framer-motion';
-// import zipUrl from "../../assets/companyfolders/CAPGEMINI-broadcodesmaterial.zip";
+// import zipUrl from "../../assets/companyfolders/CAPGEMINI-devupversmaterial.zip";
 import { useNavigate } from "react-router-dom";
 
 const Interviewexpo = ( ) => {

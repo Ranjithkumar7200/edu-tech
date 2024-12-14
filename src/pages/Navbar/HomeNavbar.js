@@ -2,11 +2,11 @@ import React, { useEffect, useState, useRef } from "react";
 import { Navbar, Nav, Container, Button } from "react-bootstrap";
 import { Link, useLocation } from "react-router-dom";
 import logo from "../../assets/images/logofinal.jpg";
-import "./EduTechNavbar.css";
+import "./HomeNavbar.css";
 import Dropdown from 'react-bootstrap/Dropdown';
 
 
-const EduTechNavbar = () => {
+const HomeNavbar = () => {
   const location = useLocation();
   const [activeLink, setActiveLink] = useState(location.pathname);
   const [expanded, setExpanded] = useState(false);
@@ -74,12 +74,12 @@ const EduTechNavbar = () => {
         <Navbar.Brand as={Link} to="/" className="d-flex align-items-center">
           <img
             src={logo}
-            alt="broadcodes Logo"
+            alt="devupvers Logo"
             width="40"
             height="40"
             className="d-inline-block align-top me-2"
           />
-          BroadCodes
+          Devupvers
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
@@ -209,4 +209,4 @@ const EduTechNavbar = () => {
   );
 };
 
-export default EduTechNavbar;
+export default HomeNavbar;
