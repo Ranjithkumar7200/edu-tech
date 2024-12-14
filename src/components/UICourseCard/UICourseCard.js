@@ -17,7 +17,8 @@ const UICourseCard = ({ course }) => {
       />
       <Card.Body className="d-flex flex-column">
         <div className="d-flex justify-content-between align-items-center mb-1">
-          <small className="text-muted">{course.category}</small>
+        <Card.Title className="h6 mb-1">{course.title}</Card.Title>
+         
           <div>
             {[...Array(5)].map((_, i) => (
               <Star
@@ -29,7 +30,7 @@ const UICourseCard = ({ course }) => {
             ))}
           </div>
         </div>
-        <Card.Title className="h6 mb-1">{course.title}</Card.Title>
+        <small className="text-muted">{course.category}</small>
         <div className="d-flex justify-content-between align-items-center mb-1">
           <span className="h5 m-0 text-primary">₹{course.price}</span>
           <small className="text-muted d-flex align-items-center">

@@ -4,7 +4,7 @@ export const courses = [
   {
     id: 1,
     title: "Basic Course for Beginners",
-    category: "Basic Course",
+    category: "Python,HTML,CSS,Javascript,Mini Project",
     price: 500,
     rating: 4,
     duration: "40hr ",

@@ -23,7 +23,7 @@ const AboutUs = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            Welcome to <strong>BroadCodes</strong>, where education meets
+            Welcome to <strong>Devupvers</strong>, where education meets
             innovation. Our mission is to revolutionize learning by making it
             more accessible, engaging, and effective for learners across the
             globe. In today's fast-changing world, knowledge is power, and we
@@ -57,7 +57,7 @@ const AboutUs = () => {
         <Col md={6}>
           <h3>What We Do</h3>
           <p>
-            At <strong>BroadCodes</strong>, we offer a comprehensive suite of digital learning tools and resources that cater to learners at every stage of their educational journey. Our courses range from foundational subjects to specialized skills for professional development, all curated by leading industry experts and educators.
+            At <strong>Devupvers</strong>, we offer a comprehensive suite of digital learning tools and resources that cater to learners at every stage of their educational journey. Our courses range from foundational subjects to specialized skills for professional development, all curated by leading industry experts and educators.
           </p>
           <motion.h3
             initial={{ opacity: 0, y: -30 }}
@@ -155,7 +155,7 @@ const AboutUs = () => {
         <Col md={6}>
           <h3>Our Team</h3>
           <p>
-            Behind <strong>BroadCodes</strong> is a diverse group of passionate educators, technology enthusiasts, and industry experts. We bring together years of experience in education, software development, and content creation to deliver the best possible learning experience.
+            Behind <strong>Devupvers</strong> is a diverse group of passionate educators, technology enthusiasts, and industry experts. We bring together years of experience in education, software development, and content creation to deliver the best possible learning experience.
           </p>
         </Col>
         <Col md={6}>
@@ -195,7 +195,7 @@ const AboutUs = () => {
         <Col md={10}>
           <h3>Join Us Today</h3>
           <p className="text-secondary">
-            Whether you are a student, professional, or lifelong learner, <strong>BroadCodes</strong> is here to help you achieve your educational goals. Join our vibrant community of learners today, and take the next step toward your brighter future.
+            Whether you are a student, professional, or lifelong learner, <strong>Devupvers</strong> is here to help you achieve your educational goals. Join our vibrant community of learners today, and take the next step toward your brighter future.
           </p>
           <Button variant="warning"  onClick={() => navigate('/contact')}  >
             Get Started

@@ -4,7 +4,7 @@ import "./Footer.css";
 import { CiInstagram } from "react-icons/ci";
 import { CiYoutube } from "react-icons/ci";
 import { CiLinkedin } from "react-icons/ci";
-import { FaTelegram } from "react-icons/fa";
+// import { FaTelegram } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -16,11 +16,11 @@ const Footer = () => {
               <div className="col-md-3">
                 <div className="footer-logo">
                   <img src={logo} className="w-50" alt="logo" />
-                  <span className="h5 fw-bold">broadcodes</span>
+                  <span className="h5 fw-bold">Devupvers</span>
                 </div>
                 
-                <p className="mt-3">
-                  broadcodes offers industrial training in emerging technologies like Python, Data Science, Artificial Intelligence, and DevOps in Telugu,English,tamil.
+                <p className="mt-3 text-align-p ">
+                  Devupvers offers industrial training in emerging technologies like Python, Data Science, Artificial Intelligence, and DevOps in Telugu,English,tamil.
                 </p>
               </div>
               <div className="col-md-3">
@@ -58,10 +58,10 @@ const Footer = () => {
                 <div className="social footer-items">
                   <ul className="list-unstyled">
                     <li>
-                      <a href="#" className="footer-text  text-decoration-none">Python</a>
+                      <a href="/" className="footer-text  text-decoration-none">Python</a>
                     </li>
                     <li>
-                      <a href="#" className="footer-text text-decoration-none">DevOps</a>
+                      <a href="/" className="footer-text text-decoration-none">DevOps</a>
                     </li>
                   </ul>
                 </div>
@@ -72,16 +72,16 @@ const Footer = () => {
                 <div className="social footer-items">
                   <ul className="list-unstyled">
                     <li>
-                      <a href="#" className="footer-text text-decoration-none">Home</a>
+                      <a href="/" className="footer-text text-decoration-none">Home</a>
                     </li>
                     <li>
-                      <a href="#" className="footer-text text-decoration-none">Contact Us</a>
+                      <a href="/" className="footer-text text-decoration-none">Contact Us</a>
                     </li>
                     <li>
-                      <a href="#" className="footer-text text-decoration-none">Privacy</a>
+                      <a href="/" className="footer-text text-decoration-none">Privacy</a>
                     </li>
                     <li>
-                      <a href="#" className="footer-text text-decoration-none">Terms and Conditions</a>
+                      <a href="/" className="footer-text text-decoration-none">Terms and Conditions</a>
                     </li>
                   </ul>
                 </div>
@@ -90,7 +90,7 @@ const Footer = () => {
             <hr />
             <div className="row">
               <div className="col-md-6">
-                <p className="m-0 text-center fw-bold">Copyright © 2024 broadcodes</p>
+                <p className="m-0 text-center fw-bold">Copyright © 2024 devupvers</p>
               </div>
              
             </div>

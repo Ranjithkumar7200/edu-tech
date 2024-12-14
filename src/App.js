@@ -5,19 +5,19 @@ import Interviewexpo from "./pages/Interviewexpo/Interviewexpo";
 import ContactUs from "./pages/contactUs/ContactUs";
 import Courses from "./pages/courses/Courses";
 import LandingPage from "./pages/LandingPage/LandingPage";
-import EduTechNavbar from "./pages/Navbar/EduTechNavbar";
+import HomeNavbar from "./pages/Navbar/HomeNavbar";
 import Footer from "./pages/footer/Footer";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import CourseDetails from "./pages/courses/CourseDetails/CourseDetails";
 import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
-
+import Platforms from "./pages/Platform/Platforms";
 import InterviewQues from "./pages/Interviewexpo/SpecificInterview/InterviewQues";
 
 function App() {
   return (
     <Router>
       <ScrollToTop />
-      <EduTechNavbar />
+      <HomeNavbar />
 
       <Routes>
         <Route path="/" element={<LandingPage />} />
@@ -29,6 +29,7 @@ function App() {
         <Route path="/interviewexpo" element={<Interviewexpo />} />
         <Route path="/" element={<Interviewexpo />} />
         <Route path="/interview-questions/:company" element={<InterviewQues />} />
+        <Route path="/platforms" element={<Platforms />} />
       </Routes>
       <Footer />
     </Router>
