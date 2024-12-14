@@ -1,7 +1,7 @@
 import React from "react";
 import "./Mentor.css";
 import { Card, Col, Row, Image } from 'react-bootstrap';
-import bhagya from "../../assets/images/bhagya.jpg";
+import bhagya from "../../assets/images/bhagya1.jpeg";
 import satish from "../../assets/images/satish.jpg";
 import ranjith from "../../assets/images/ranjith.jpg";
 import sriman from "../../assets/images/sriman.jpg";

@@ -28,4 +28,28 @@
     display: flex;
     justify-content: space-between;
   }
+  .syllabuscontainer{
+    padding: 2rem;
+    background-color: #fdf8ee;
+  }
+  
+  .syllabus-input {
+    background-color: #f1f5d6;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    width: 100%;
+    /* max-width: 400px; */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .syllabus-input:focus {
+    background-color: #f0f3d3;
+    outline: none;
+    border-color: #007bff;
+  }
+  
   

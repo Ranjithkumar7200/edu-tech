@@ -12,6 +12,8 @@ import CourseDetails from "./pages/courses/CourseDetails/CourseDetails";
 import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 import Platforms from "./pages/Platform/Platforms";
 import InterviewQues from "./pages/Interviewexpo/SpecificInterview/InterviewQues";
+import SyllabuListing from "./components/UICourseCard/SyllabuListing";
+
 
 function App() {
   return (
@@ -30,6 +32,7 @@ function App() {
         <Route path="/" element={<Interviewexpo />} />
         <Route path="/interview-questions/:company" element={<InterviewQues />} />
         <Route path="/platforms" element={<Platforms />} />
+        <Route  path="/syllabusListing" element={<SyllabuListing/>}/>
       </Routes>
       <Footer />
     </Router>

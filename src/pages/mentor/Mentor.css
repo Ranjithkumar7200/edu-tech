@@ -27,6 +27,7 @@
         margin:0px !important;
         display: flex;
        flex-direction: column;
+       padding: 2rem;
     }
     .text-font{
         align-items: center;
@@ -34,7 +35,7 @@
     }
     .google-button {
         background-color: transparent;
-        border: 2px solid black;
+        border: 1px solid rgb(225, 255, 57);
         border-radius: 2px;
         padding: 5px 10px;
         font-family: 'Roboto', sans-serif;
@@ -51,7 +52,7 @@
 
     .google-button {
         background-color: transparent;
-        border: 2px solid black;
+        border: 1px solid rgb(225, 255, 57);
         border-radius: 4px;
         padding: 10px 20px;
         font-family: 'Roboto', sans-serif;
@@ -92,10 +93,12 @@
         background-color:#fdf8ee ;
         margin:0px !important;
         display: flex;
+        padding: 2rem;
         justify-content: space-between;
     }
     .imagecontain{
-        object-fit: contain;
+        /* object-fit: contain; */
+        background-size: contain;
         border-radius: 50%;
         transition: transform 0.3s ease-in-out;
     }

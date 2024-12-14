@@ -2,6 +2,7 @@ import React from "react";
 import { Card, Button } from "react-bootstrap";
 import { Clock, MonitorPlay, Download, Star } from "lucide-react";
 import { useNavigate } from "react-router-dom";
+import {Link} from 'react-router-dom'
 import "./UICourseCard.css";
 
 const UICourseCard = ({ course }) => {
@@ -30,7 +31,16 @@ const UICourseCard = ({ course }) => {
             ))}
           </div>
         </div>
+        <div className="d-flex justify-content-between align-items-center mb-1">
         <small className="text-muted">{course.category}</small>
+          <small className="text-muted d-flex align-items-center">
+          
+           {/* <a href="/" >syllabus</a> */}
+           <Link to="/syllabusListing">Syllabus</Link>
+
+          </small>
+        </div>
+        
         <div className="d-flex justify-content-between align-items-center mb-1">
           <span className="h5 m-0 text-primary">₹{course.price}</span>
           <small className="text-muted d-flex align-items-center">
