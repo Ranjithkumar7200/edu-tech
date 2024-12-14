@@ -21,14 +21,15 @@ const InterviewQues = ({route}) => {
         companyName ="TCS"  ;
         
     } else if ( company === "Accenture") {
-        data = AccentureData;  
+        data = AccentureData; 
+        companyName ="Accenture" 
     } else if (company === "L&t"){
         data = LT;
-        companyName ="L&T"
+        companyName ="L&T";
     }
     else if (company === "Cognizant"){
         data = Cognizant;
-        companyName ="Cognizant"
+        companyName ="Cognizant";
     }
     useEffect(() => {
         AOS.init({ duration: 8000 });
@@ -84,7 +85,7 @@ const InterviewQues = ({route}) => {
     }
     return (
         <div className="background-color">
-            <div className="headContainer">  <h1> {companyName} Interview Experience | 2024 Batch</h1></div>
+            <div className="headContainer">  <h1> {companyName} Interview Experience </h1></div>
 
             <div>Updated on 2024</div>
             <div className="headContainer"><h2 ><strong><u>{companyName}&nbsp;Experience</u></strong></h2></div>

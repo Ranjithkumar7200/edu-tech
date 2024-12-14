@@ -12,7 +12,7 @@ const Mentor = () => {
 
     const members = [
         {
-          name: "satish",
+          name: "Satish",
           avatar: satish,
           role: "React-broadcodes",
         },

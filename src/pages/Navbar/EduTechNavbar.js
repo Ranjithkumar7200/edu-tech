@@ -158,13 +158,13 @@ const EduTechNavbar = () => {
                     </Dropdown.Item>
                     <Dropdown.Item
                       as={Link}
-                      to="/contact"
+                      to="/"
                       className={activeItem === "action3" ? "active-link" : ""}
                       onClick={() => {
-                        handleItemClick("action3");
+                        handleItemClick("platforms");
                       }}
                     >
-                      Contact
+                     Platforms
                     </Dropdown.Item>
                   </Dropdown.Menu>
                 </Dropdown>
