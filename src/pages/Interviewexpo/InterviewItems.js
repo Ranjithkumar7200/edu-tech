@@ -4,7 +4,7 @@
 // import picture3 from "../../assets/images/Interviewpics/picture3.png";
 // import picture1 from "../../assets/images/Interviewpics/picture1.png";
 // import picture2 from "../../assets/images/Interviewpics/picture2.png";
-import picture6 from "../../assets/images/Interviewpics/picture6.jpg";
+import picture6 from "../../assets/images/Interviewpics/interviewlogo.jpg";
 import "./InterviewExpo.css";
 //import { Download } from "lucide-react";
 export const membersData = [

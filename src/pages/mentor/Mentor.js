@@ -7,6 +7,7 @@ import ranjith from "../../assets/images/ranjith.jpg";
 import sriman from "../../assets/images/sriman.jpg";
 import lavanya from "../../assets/images/lavanya.jpg";
 import rohith from "../../assets/images/rohith.jpg";
+import maha from "../../assets/images/mahalakshmi.jpg";
 
 const Mentor = () => {
 
@@ -40,6 +41,11 @@ const Mentor = () => {
       name: "Lavanya",
       avatar: lavanya,
       role: "Guideware,java - devupvers",
+    },
+    {
+      name: "Mahalakshmi",
+      avatar: maha,
+      role: "Mahalakhmi - devupvers",
     },
   ];
   return (

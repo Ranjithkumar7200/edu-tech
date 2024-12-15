@@ -29,7 +29,7 @@ function App() {
         <Route path="/contact" element={<ContactUs />} />
         <Route path="/community" element={<Community />} />
         <Route path="/interviewexpo" element={<Interviewexpo />} />
-        <Route path="/" element={<Interviewexpo />} />
+        <Route path="/interview" element={<Interviewexpo />} />
         <Route path="/interview-questions/:company" element={<InterviewQues />} />
         <Route path="/platforms" element={<Platforms />} />
         <Route  path="/syllabusListing" element={<SyllabuListing/>}/>
