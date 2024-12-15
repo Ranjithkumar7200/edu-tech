@@ -1,4 +1,9 @@
-
+export const CompanyList = [
+    { name: "TCS", link: "http://localhost:3000/interview-questions/Tcs" },
+    { name: "L&T", link: "http://localhost:3000/interview-questions/L&t" },
+    { name: "Accenture", link: "http://localhost:3000/interview-questions/Accenture" },
+    { name: "Cognizant", link: "http://localhost:3000/interview-questions/Cognizant" }
+];
 
 export const TCSData = [
     {

@@ -1,0 +1,13 @@
+.Modal-container {
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;        
+}
+
+.Modal-container div a {
+    width: 50px; 
+}
+
+.Modal-container div a img {
+    width: 50px; 
+}
