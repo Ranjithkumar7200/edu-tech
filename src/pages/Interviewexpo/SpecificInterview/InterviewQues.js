@@ -92,7 +92,7 @@ const InterviewQues = () => {
             <div>Updated on 2024</div>
             <div className="headContainer"><h2 ><strong><u>{companyName}&nbsp;Experience</u></strong></h2></div>
             <div className="main-container lap mobile">
-                <div className="left-container ">
+                <div className="interview-left-container ">
                     {CompanyList.map((company, index) => (
                         <div key={index} className="comapanynames">
                             <a href={company.link} className="txt-color" style={{ color: "black" }}>
