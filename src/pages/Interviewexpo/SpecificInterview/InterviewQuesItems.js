@@ -2,7 +2,8 @@ export const CompanyList = [
     { name: "TCS", link: "http://localhost:3000/interview-questions/Tcs" },
     { name: "L&T", link: "http://localhost:3000/interview-questions/L&t" },
     { name: "Accenture", link: "http://localhost:3000/interview-questions/Accenture" },
-    { name: "Cognizant", link: "http://localhost:3000/interview-questions/Cognizant" }
+    { name: "Cognizant", link: "http://localhost:3000/interview-questions/Cognizant" },
+    { name: "Capgemini", link: "http://localhost:3000/interview-questions/Capgemini" }
 ];
 
 export const TCSData = [
@@ -870,9 +871,142 @@ Role and team members in the project.<br>
 Cultural activities participation.<br>
 Internship experience.<br>`
     },
-    
 
 
 
+
+
+]
+export const Capgemini = [
+    {
+        paragraph: `1) Tell me about yourself<br>
+2) SQL commands (DML, DDL)<br>
+3) Class and object<br>
+4) OOPs concepts (in detail)<br>
+5) Method overloading and overriding<br>
+6) What is for loop and if condition<br>
+7) Print Even numbers code logic<br>
+Palindrome code and explanation<br>
+8) What is Extends and Implements keyword<br>
+9) Brief explanation about my academic project<br>
+10) Linux commands<br>
+11) Any questions<br>
+`
+
+
+    },
+    {
+        paragraph: `1. Show your ID<br>
+2. Self Introduction<br>
+3. About project<br>
+4. What is SQL<br>
+5. About joins<br>
+6. Project description<br>
+7. Write a query<br>
+8. Difference between Set and Dictionary<br>
+9. Do you have any questions<br>
+`
+
+
+    },
+    {
+        paragraph: `1. Self-introduction<br>
+2. 10th & 12th Board of Education<br>
+3. Family background<br>
+4. OOPs concepts<br>
+5. Main features of OOPs<br>
+6. Difference between encapsulation & abstraction<br>
+7. Inheritance & types<br>
+8. Hobbies<br>
+9. Lists and tuples in Python<br>
+10. DDL & DML commands<br>
+11. Final year project<br>
+12. Show govt ID<br>
+`
+
+
+    },
+    {
+        paragraph: `1. Tell me about yourself<br>
+2. Project in detail (all the projects mentioned in resume)<br>
+3. Internship<br>
+4. Rate yourself in Java: said 7<br>
+5. Final and Finally difference<br>
+6. Throw and Throws difference<br>
+7. SQL query<br>
+8. Even odd number program<br>
+9. Collections - frameworks in Java<br>
+10. Loops in Java<br>
+11. OOPs concepts in Java<br>
+12. Synchronization<br>
+13. Statements<br>
+14. String buffer<br>
+15. Method overloading and method overriding<br>
+16. Apart from work and academics, what are your other interests<br>
+17. Any questions for me<br>
+`},
+    {
+        paragraph: `1. Intro<br>
+2. Brief projects<br>
+3. Role in project<br>
+4. Qualities a good team leader must have<br>
+5. What are the good qualities a team member should have<br>
+6. Is your team member that qualities?<br>
+7. What are your achievements (academic and non-academic)<br>
+8. Internship<br>
+9. What you learned from internship<br>
+Overall, the interview was great, and it lasted for 10-15 minutes.<br>
+`},
+    {
+        paragraph: `1. Self-introduction<br>
+2. SDLC<br>
+3. About semiconductor and its need<br>
+4. Transistor<br>
+5. Data structure questions<br>
+6. OOPs concepts<br>
+7. Project (resume)<br>
+8. Python<br>
+9. #include in C<br>
+10. Participated in any events in college?<br>
+11. OSI model and layers<br>
+12. AWS concepts<br>
+13. IoT<br>
+`},
+    {
+        paragraph: `1. Self-introduction<br>
+2. About the IPL match, which team did you support<br>
+3. Favorite subject<br>
+4. Have you done any projects or internships<br>
+5. About my current project<br>
+6. Programming languages you prefer<br>
+7. Difference between Java and Python<br>
+8. SQL constraints<br>
+9. SQL join and its types<br>
+10. Write a query using inner join<br>
+11. Difference between Truncate and Delete<br>
+12. Primary key and Foreign key<br>
+13. OOPs<br>
+14. Polymorphism<br>
+15. Program on swapping two numbers<br>
+16. Why Capgemini<br>
+17. Do you have any questions<br>
+`},
+    {
+        paragraph: `Hi bro, today I attended Capgemini (Analyst role) interview at 10:15 AM<br>
+
+1) Tell me about yourself<br>
+2) SQL commands (DML, DDL)<br>
+3) Class and object<br>
+4) OOPs concepts (in detail)<br>
+5) Method overloading and overriding<br>
+6) What is for loop and if condition<br>
+7) Print even numbers code logic, Palindrome code and explanation<br>
+8) What is Extends and Implements keyword<br>
+9) Brief explanation about my academic project<br>
+10) Linux commands<br>
+11) Any questions<br>
+
+That's it.<br>
+`}
 
 ]

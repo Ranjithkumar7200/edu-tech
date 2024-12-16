@@ -39,5 +39,14 @@ export const membersData = [
     Download : true,
 
     },
+    
+    {
+      Company: "Capgemini",
+      
+      avatar: picture6,
+      Download : true,
+  
+      },
+      
   
 ];

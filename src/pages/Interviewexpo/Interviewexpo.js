@@ -37,7 +37,7 @@ const Interviewexpo = ( ) => {
                     <Card.Subtitle className="mb-3 text-muted text">Experience</Card.Subtitle>
                     </div>
                     
-                    <div><Image src={member.avatar} className="lap mobile images-style" /></div>
+                    <div><Image src={member.avatar} className="lapInterview mobileInterview images-style" /></div>
                   </div>
                 </Card.Body>
               </Card>

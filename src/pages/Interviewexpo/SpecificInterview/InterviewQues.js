@@ -2,7 +2,7 @@ import "./InterviewQuestion.css";
 import { Container, Row, Col, Card } from "react-bootstrap";
 import React, { useState, useEffect, useRef } from "react";
 import AOS from "aos";
-import { TCSData, AccentureData, LT, Cognizant } from './InterviewQuesItems';
+import { TCSData, AccentureData, LT, Cognizant ,Capgemini } from './InterviewQuesItems';
 import { useParams, useLocation } from "react-router-dom";
 import { CompanyList } from "./InterviewQuesItems";
 import { SiWhatsapp } from "react-icons/si";
@@ -37,6 +37,10 @@ const InterviewQues = () => {
     } else if (company === "Cognizant") {
         data = Cognizant;
         companyName = "Cognizant";
+    }
+    else if (company === "Capgemini") {
+        data = Capgemini;
+        companyName = "Capgemini";
     }
 
     useEffect(() => {

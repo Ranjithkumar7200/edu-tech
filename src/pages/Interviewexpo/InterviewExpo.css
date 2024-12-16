@@ -18,17 +18,17 @@
 }
 
 @media (max-width: 576px) {
-   .mobile{
+   .mobileInterview{
     width: 150px;
     height: 200px;
     border-radius: 35px;
    }
    .images-style{
-    width: 50%;
+    width: 65%;
    }
 }
 @media (min-width: 992px)  {
-    .lap{
+    .lapInterview{
         width: 150px;
         height: 200px;
         border-radius: 35px;
