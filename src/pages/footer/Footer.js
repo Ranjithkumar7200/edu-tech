@@ -1,103 +1,124 @@
 import React from "react";
+import { Container, Row, Col, Image, Nav, ListGroup } from "react-bootstrap";
+import { CiInstagram, CiYoutube, CiLinkedin } from "react-icons/ci";
 import logo from "../../assets/images/logofinal.jpg";
-import "./Footer.css";
-import { CiInstagram } from "react-icons/ci";
-import { CiYoutube } from "react-icons/ci";
-import { CiLinkedin } from "react-icons/ci";
-// import { FaTelegram } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <div className="background">
-      <header className="text-center">
-        <section className="footer background pt-5 pb-3 mt-3">
-          <div className="container">
-            <div className="row">
-              <div className="col-md-3">
-                <div className="footer-logo">
-                  <img src={logo} className="w-50" alt="logo" />
-                  <span className="h5 fw-bold">Devupvers</span>
-                </div>
-                
-                <p className="mt-3 text-align-p ">
-                  Devupvers offers industrial training in emerging technologies like Python, Data Science, Artificial Intelligence, and DevOps in Telugu,English,tamil.
-                </p>
-              </div>
-              <div className="col-md-3">
-                <div className="h5 fw-bold footer-items">Follow Us</div>
-                <div className="theme-divider2 mb-3"></div>
-                <div className="social footer-items">
-                  <ul className="list-unstyled">
-                  <li>
-                      <a href="https://youtube.com/@broadcodes?si=N4l8WZ1m0J65V6tn" target="_blank" rel="noopener noreferrer" className=" footer-text   text-decoration-none">
-                      <span className="mr-10"><CiYoutube /></span> Youtube
-                      </a>
-                    </li>
-                    <li>
-                      <a href="https://www.instagram.com/broadcodes?igsh=MWVwdW9pMG8yZWYzYg==" target="_blank" rel="noopener noreferrer" className="footer-text  text-decoration-none">
-                      <span><CiInstagram /></span>  Instagram
-                      </a>
-                    </li>
-                    
-                    <li>
-                      <a href="https://www.linkedin.com/school/broadcodes/posts/?feedView=all" target="_blank" rel="noopener noreferrer" className=" footer-text    text-decoration-none">
-                      <span className="mr-11"><CiLinkedin /></span> Linkedin
-                      </a>
-                    </li>
-                    {/* <li>
-                      <a href="" target="_blank" rel="noopener noreferrer" className="footer-text  text-decoration-none">
-                      <span className="mr-6"><FaTelegram /></span> Telegram
-                      </a>
-                    </li> */}
-                  </ul>
-                </div>
-              </div>
-              <div className="col-md-3">
-                <div className="h5 fw-bold footer-items">Courses</div>
-                <div className="theme-divider2 mb-3"></div>
-                <div className="social footer-items">
-                  <ul className="list-unstyled">
-                    <li>
-                      <a href="/" className="footer-text  text-decoration-none">Python</a>
-                    </li>
-                    <li>
-                      <a href="/" className="footer-text text-decoration-none">DevOps</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div className="col-md-3">
-                <div className="h5 fw-bold footer-items">Quick Links</div>
-                <div className="theme-divider2 mb-3"></div>
-                <div className="social footer-items">
-                  <ul className="list-unstyled">
-                    <li>
-                      <a href="/" className="footer-text text-decoration-none">Home</a>
-                    </li>
-                    <li>
-                      <a href="/" className="footer-text text-decoration-none">Contact Us</a>
-                    </li>
-                    <li>
-                      <a href="/" className="footer-text text-decoration-none">Privacy</a>
-                    </li>
-                    <li>
-                      <a href="/" className="footer-text text-decoration-none">Terms and Conditions</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
+    <footer className="bg-dark text-light py-5">
+      <Container>
+        <Row className="g-4">
+          <Col md={3}>
+            <div className="d-flex align-items-center mb-3">
+              <Image
+                src={logo}
+                alt="Devupvers Logo"
+                width={50}
+                rounded
+                className="me-2"
+              />
+              <h5 className="fw-bold mb-0">Devupvers</h5>
             </div>
-            <hr />
-            <div className="row">
-              <div className="col-md-6">
-                <p className="m-0 text-center fw-bold">Copyright © 2024 devupvers</p>
-              </div>
-             
-            </div>
-          </div>
-        </section>
-      </header>
-    </div>
+            <p className="text-light">
+              Devupvers offers industrial training in emerging technologies like
+              Python, Data Science, Artificial Intelligence, and DevOps in
+              Telugu, English, Tamil.
+            </p>
+          </Col>
+
+          <Col md={3}>
+            <h5 className="fw-bold mb-3">Follow Us</h5>
+            <Nav className="flex-column">
+              <Nav.Link
+                href="https://youtube.com/@broadcodes"
+                target="_blank"
+                className="text-light d-flex align-items-center mb-2"
+              >
+                <CiYoutube className="me-2" /> YouTube
+              </Nav.Link>
+              <Nav.Link
+                href="https://www.instagram.com/broadcodes"
+                target="_blank"
+                className="text-light d-flex align-items-center mb-2"
+              >
+                <CiInstagram className="me-2" /> Instagram
+              </Nav.Link>
+              <Nav.Link
+                href="https://www.linkedin.com/school/broadcodes"
+                target="_blank"
+                className="text-light d-flex align-items-center"
+              >
+                <CiLinkedin className="me-2" /> LinkedIn
+              </Nav.Link>
+            </Nav>
+          </Col>
+
+          <Col md={3}>
+            <h5 className="fw-bold mb-3">Courses</h5>
+            <ListGroup variant="flush">
+              <ListGroup.Item
+                action
+                href="/python"
+                className="bg-dark text-light border-0"
+              >
+                Python
+              </ListGroup.Item>
+              <ListGroup.Item
+                action
+                href="/devops"
+                className="bg-dark text-light border-0"
+              >
+                DevOps
+              </ListGroup.Item>
+            </ListGroup>
+          </Col>
+
+          <Col md={3}>
+            <h5 className="fw-bold mb-3">Quick Links</h5>
+            <ListGroup variant="flush">
+              <ListGroup.Item
+                action
+                href="/"
+                className="bg-dark text-light border-0"
+              >
+                Home
+              </ListGroup.Item>
+              <ListGroup.Item
+                action
+                href="/contact"
+                className="bg-dark text-light border-0"
+              >
+                Contact Us
+              </ListGroup.Item>
+              <ListGroup.Item
+                action
+                href="/privacy"
+                className="bg-dark text-light border-0"
+              >
+                Privacy
+              </ListGroup.Item>
+              <ListGroup.Item
+                action
+                href="/terms"
+                className="bg-dark text-light border-0"
+              >
+                Terms and Conditions
+              </ListGroup.Item>
+            </ListGroup>
+          </Col>
+        </Row>
+
+        <hr className=" my-4" />
+
+        <Row>
+          <Col className="text-center">
+            <p className="mb-0">
+              &copy; {new Date().getFullYear()} Devupvers. All Rights Reserved.
+            </p>
+          </Col>
+        </Row>
+      </Container>
+    </footer>
   );
 };
 

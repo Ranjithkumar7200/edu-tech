@@ -1,22 +1,95 @@
 import React from "react";
-
-import "./Footer.css";
-
+import { Container, Row, Col, Card, Badge } from "react-bootstrap";
+import { Award, Target, Globe } from "lucide-react";
 
 const Mission = () => {
   return (
-    <dev>
-        <h2 className="text-center text-annime"><span >Transforming <span className="text-color" >Education</span>, Empowering <span className="text-color">Innovation</span> </span></h2>
-        <div className="text-container " ><span className="fw-bold">Our <span className="text-color">Mission</span></span></div>
-        <div className="text-container"><p>At Devupvers, we are redefining the future of education by empowering aspiring developers and technology enthusiasts through immersive, hands-on learning experiences. Established by devupvers, our platform champions the philosophy of “learning through application,” offering practical, real-world projects to accelerate skill development.
+    <Container  className="py-5">
+      <Row className="mb-4">
+        <Col>
+          <h2 className="text-center display-6 fw-bold">
+            Transforming <span className="mainColor">Education</span>,
+            Empowering <span className="mainColor">Innovation</span>
+          </h2>
+        </Col>
+      </Row>
 
-        Our diverse course offerings, spanning front-end, back-end, and full-stack development, nurture a vibrant community of talented developers. As we broaden our scope to include advanced technologies, our mission remains to inspire continuous growth and ingenuity within the tech ecosystem, all while fostering expert guidance and a collaborative learning environment.</p></div>
-        <div className="text-container " ><span className="fw-bold">Our <span className="text-color">Vision <strong className="text-dark">and</strong>  Values</span></span></div>
-      <div className="text-container" >  <p>At Devupvers, we envision a world where education transcends boundaries of geography, socio-economic status, and learning styles. We believe in the transformative power of knowledge and strive to provide equal access to quality learning experiences for all.
+      <Row className="g-4">
+        <Col md={6}>
+          <Card className="h-100 border shadow-0">
+            <Card.Header
+              className="bg-warning text-white d-flex align-items-center"
+              as="h3"
+            >
+              <Award className="me-3" size={32} />
+              Our <span className="ms-2 text-warning">Mission</span>
+            </Card.Header>
+            <Card.Body>
+              <p className="lead text-muted">
+                At Devupvers, we are redefining the future of education by
+                empowering aspiring developers through immersive, hands-on
+                learning experiences.
+              </p>
+              <div className="d-flex align-items-center">
+                <Badge bg="warning" pill className="me-2">
+                  Practical Learning
+                </Badge>
+                <Badge bg="secondary" pill>
+                  Real-World Projects
+                </Badge>
+              </div>
+            </Card.Body>
+          </Card>
+        </Col>
 
-Our platform is dedicated to empowering learners with the skills and resources they need to become the architects of tomorrow's digital innovations. Through our carefully crafted courses, we inspire creativity, foster innovation, and equip developers to meet the ever-evolving demands of the tech industry. Together, we’re shaping a future where learning knows no limits and technological advancement is accessible to all.</p></div>
-    
-    </dev>
+        <Col md={6}>
+          <Card className="h-100 border shadow-0">
+            <Card.Header
+              className="bg-warning text-white d-flex align-items-center"
+              as="h3"
+            >
+              <Target className="me-3" size={32} />
+              Our <span className="ms-2 text-white">Vision</span>
+            </Card.Header>
+            <Card.Body>
+              <p className="lead text-muted">
+                We envision a world where education transcends boundaries,
+                providing equal access to quality learning experiences.
+              </p>
+              <div className="d-flex align-items-center">
+                <Badge bg="warning" pill className="me-2">
+                  Inclusive Learning
+                </Badge>
+                <Badge bg="secondary" pill>
+                  Tech Innovation
+                </Badge>
+              </div>
+            </Card.Body>
+          </Card>
+        </Col>
+      </Row>
+
+      <Row className="mt-4">
+        <Col>
+          <Card className="border shadow-0">
+            <Card.Header
+              className="bg-warning text-white d-flex align-items-center"
+              as="h3"
+            >
+              <Globe className="me-3" size={32} />
+              Our <span className="ms-2 text-white">Impact</span>
+            </Card.Header>
+            <Card.Body>
+              <p className="text-muted">
+                By fostering a collaborative learning environment and providing
+                expert guidance, we're shaping a future where technological
+                advancement is accessible to all.
+              </p>
+            </Card.Body>
+          </Card>
+        </Col>
+      </Row>
+    </Container>
   );
 };
 
